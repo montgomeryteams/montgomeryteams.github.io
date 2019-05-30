@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAMS</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="./js/lax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script type="text/javascript">
+
+    window.onload = function() {
+
+        document.getElementById("main").classList.add("loaded")
+
+        lax.setup()
+
+        const update = () => {
+            lax.update(window.scrollY)
+            window.requestAnimationFrame(update)
+        }
+
+        window.requestAnimationFrame(update)
+
+        var ctx = document.getElementById('pieChartDisabled').getContext('2d');
+        var ctx1 = document.getElementById('pieChartCrashes').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'pie',
+
+            // The data for our dataset
+            data: {
+                labels: ['65 years or older', 'Disabled', 'Neither'],
+                datasets: [{
+                    data: [335432 * 0.15, 15000, 335432 - (335432 * 0.15 + 15000)],
+                    backgroundColor: ['#bcbcbc', 'rgba(255, 0 ,0, 0.7)', 'rgba(0, 0, 0, 0.1)']
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+        var chart1 = new Chart(ctx1, {
+            type: 'line',
+            
+            data: {
+                labels: ['16 - 19','20 - 24', '25 - 29','30 - 34', '40 - 44', '45 - 49', '50 - 54', '55 - 59', '60 - 64', '65 - 69', '70 - 74', '75 - 79', '80 - 84', '>= 85'],
+                datasets: [ {data: [4.7, 3.1, 2.3, 1.7, 1.5, 1.3, 1.4, 1.2, 1.3, 1.2, 1.2, 1.8, 2.3, 4.3, 7.6],
+                pointBackgroundColor: '#FFFFFF', backgroundColor:'#EEEEEE', label: 'Passenger vehicle fatal crash involvements per 100 million miles traveled by driver age, 2017' }]
+            }
+
+        })
+
+        $(function() {
+            updatedChart1 = false;
+            $(window).scroll(function () {
+                let scroll = $(this).scrollTop() 
+              if ((scroll > 10000 && scroll < 15000) || (scroll > 20200 && scroll < 30000)) {
+                 $("#background").addClass('night')
+              }else{
+                $("#background").removeClass('night')
+              }
+            });
+        });
+    }
+    
+  </script>
+  </head>
+  <body>
+    <div id="main">
+        <div id="background">
+            <div class = "lax moon" style = "opacity: 0; background: url('img/moon.svg') no-repeat; bottom: 0px; margin-left:40px"
+                data-lax-translate-y="10500 0, 11000 -500, 11400 -500, 12500 0"
+                data-lax-rotate="0 0, 10500 0, 14000 360"
+                data-lax-opacity="0 0, 10400 0, 10401 1, 12499 1, 12500 0">
+                </div>
+            <div class = "lax city"
+                style = "background: url('img/buildings.svg') no-repeat; bottom:-600px;"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 17400 -15700, 20200 -15700, 29035 -24535"
+                data-lax-translate-y="0 0, 1000 -600"
+                data-lax-blur="0 0, 4900 0, 5000 10, 5900 10, 6000 0">
+            </div>
+            <div style = "width:100vw;" class = "lax center"
+                data-lax-opacity="0 1, 1200 1, 1600 0"
+                data-lax-scale="0 0.8, 800 1">
+                <img width="40%" src ="img/street-sign.png">
+            </div>
+            <div style = "position:absolute;  width:100vw; height:100vh" class = "center">
+                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign1.svg" class="lax"
+                data-lax-rotate="0 90, 2000 90, 2100 0, 2500 0, 2700 -90"
+                data-lax-translate-y="0 0, 2000 0, 2100 -760, 2500 -760, 2700 0">
+                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign2.svg" class="lax"
+                data-lax-rotate="0 90, 2700 90, 2900 0, 3400 0, 3700 -90"
+                data-lax-translate-y="0 0, 2700 0, 2900 -760, 3400 -760 3700 0">
+            </div>
+            <div class = "lax city" style = "background: url('img/accident.svg') no-repeat; bottom:0;"
+                data-lax-opacity="0 1, 5900 1, 6300 0"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 7000, -5000, 8200 -6200"></div>
+            <div class = "lax city" style = "background: url('img/ambulance.svg') no-repeat; bottom:0;"
+                data-lax-opacity="0 1, 5900 1, 6300 0"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 7000, -5000, 8200 -6200"></div>
+            <div style = "width:100vw; height: 10vh; opacity:0; position:absolute; background:#c69e69" class="lax"
+                data-lax-opacity = "0 0, 17299 0, 17300 1, 17500 1, 20100 1, 20200 0"
+                data-lax-scale-y = "17299 1, 17400 10">
+            </div>
+            <div style = "width:100vw; height:100vh; position: absolute;" class = "lax center">
+                <h1 style = "position: absolute; right:-20vw; top:5vh; color:white; font-size:60px" class="lax"
+                    data-lax-translate-x = "0 0, 5000 0, 5200 (-0.25*vw)"
+                    data-lax-opacity = "0 1, 12800 1, 13000 0"> SAFETY </h1>
+                <h1 style = "position: absolute; right:-30vw; top:5vh; color:white; font-size:70px" class="lax"
+                    data-lax-translate-x = "0 0, 20200 0, 20300 (-0.35*vw)"
+                    data-lax-opacity = "0 0, 20200 0, 20300 1"> EFFICIENCY </h1>
+                <img class = "lax" data-lax-opacity = "0 0, 5000 0, 5300 1, 5500 1, 5600 0" width = "40%" src = "img/safety.svg">
+                <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 5600 0, 5700 1, 5850 1, 6000 0"> but, with autonomous vehicles... </h1>
+                <h1 class = "lax headline" style = "color:white;"data-lax-opacity = "0 0, 6200 0, 6300 1, 6650 1, 6800 0"> vehicles will not speed... </h1>
+                <h1 class = "lax headline" style = "color:white;"data-lax-opacity = "0 0, 7600 0, 7700 1, 9200 1, 9300 0"> vehicles will not pass red lights... </h1>
+                <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 9200 0, 9400 1, 10000 1, 12000 0"> and vehicles will not become impaired or fatigued.</h1>
+                <div class = "lax headline" style = "background:#424242; width:60vw; left:-60vw;" data-lax-translate-x = "0 0, 12800 0, 13000 (0.70*vw), 15800 (0.90*vw), 16300 (1.2*vw)" data-lax-opacity = "0 0, 12800 0, 13000 1, 15800 1, 16300 0">
+                    <h1 style = "color:white;"> several months of human-supervised testing will train vehicles under various driving conditions before they hit the roads. </h1>
+                </div>
+                <div class = "lax headline" style = "background: #c69e69; width:100vw" data-lax-opacity = "0 0, 16500 0, 16700 1, 17300 1, 17700 1, 17800 0">
+                    <h1 class = "lax" style = "color:#fff1e0;" data-lax-opacity = "0 0, 16500 0, 16700 1, 17300 1, 17300 0 "> Whether you’re planning to own a self-driving car or not, fewer humans on the road means fewer mistakes and safer transportation for </h1> <h1 class = "lax" data-lax-opacity = "0 0, 16500 0, 16700 1, 17700 1, 17800 0" style="color:#fffbf7"> EVERYONE </h1>
+                </div>
+                
+            </div>
+
+            <div style = "width:100vw; height:100vh; position: absolute;" class = "lax"
+                data-lax-opacity="0 0, 17799 0, 17850 1, 20100 1, 20200 0">
+                <h1 style = "position: absolute; right:-5vw; top:5vh; color:white; font-size:80px" class="lax"
+                    data-lax-translate-x = "0 0, 17850 0, 18000 (-0.1*vw)"> EVERYONE </h1>
+                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:60px" class="lax"
+                    data-lax-translate-x = "0 0, 17850 0, 18000 (-0.55*vw), 18500 (-0.55*vw), 18700 0"> Over 15% of Somerset County is aged 65 and older, and nearly 15,000 people in Somerset County under the age of 65 have a disability. </h2>
+                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:55px" class="lax"
+                    data-lax-translate-x = "0 0, 18750 0, 18950 (-0.55*vw), 19300 (-0.55*vw), 19400 0"> Involvement in fatal crashes, per mile traveled, begins increasing among drivers ages 70‒74 and are highest among drivers ages 85 and older. </h2>
+                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:50px" class="lax"
+                    data-lax-translate-x = "0 0, 19400 0, 19500 (-0.55*vw), 19800 (-0.55*vw), 19850 0"> This trend has been attributed more to an increased susceptibility to injury and medical complications among older drivers rather than an increased risk of crash involvement. </h2>
+                <h2 style = "position: absolute; top: 30vh; opacity: 0;text-align:right;width:80vw; right:10vw; text-align: center; color:white; font-size:60px" class="lax"
+                    data-lax-opacity = "0 0, 19849 0, 19900 1, 20100 1, 20200 0"> With self driving cars, disabled and elderly can stay mobile and independent without putting themselves and others at risk. </h2>
+                <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh;" class="lax center"
+                    data-lax-translate-y="0 0, 17850 0, 18000 (-0.8*vh), 18600 (-0.8*vh), 18650 0">
+                    <canvas id="pieChartDisabled"> </canvas>
+                </div>
+                <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh;" class="lax center"
+                    data-lax-translate-y="0 0, 18750 0, 18900 (-0.8*vh), 19700 (-0.8*vh), 19850 0">
+                    <canvas id="pieChartCrashes"> </canvas>
+                </div>
+
+            </div>
+            <div class="lax car" style="transform: scale(1.5); background: url('img/automobile.svg') no-repeat; bottom:-800px"
+                data-lax-translate-x= "0 (0.1*vw), (100*vh) vw"
+                data-lax-translate-y="0 0, 1000 -550"
+                data-lax-opacity="0 1, 17299 1, 17400 0, 20100 0, 20200 1"></div>
+            <div class = "lax city" style = "background: url('img/streetlight-red.svg') no-repeat; bottom:0;"
+                data-lax-opacity="0 1, 9149 1, 9150 0"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 13000 -12000"></div>
+            <div class = "lax city" style = "background: url('img/streetlight-green.svg') no-repeat; bottom:0;"
+                data-lax-opacity="0 0, 9149 0, 9150 1"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 13000 -12000"> </div>
+        </div>
+    </div>
+  </body>
+</html>

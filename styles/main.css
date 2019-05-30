@@ -1,0 +1,77 @@
+body,html {
+  margin:0;
+  padding:0;
+  color: rgb(10,10,10);
+  background: white;
+  overflow-x: hidden;
+  height: 10000vh;
+  width:100vw;
+  font-family: "Raleway", "HelveticaNeue", sans-serif;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+}
+
+#main {
+  opacity: 0;
+  transition: opacity 200ms;
+  position:fixed;
+}
+
+#main.loaded {
+  opacity: 1;
+}
+
+#background {
+  background: skyblue;
+  position: fixed;
+  display:flex;
+  align-items: center;
+  width:100vw;
+  height:100vh;
+  transition: 0.3s all;
+}
+.night {
+  background: #3b4560 !important;
+}
+.car {
+  width: 200pt;
+  height: 100pt;
+  position: absolute;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.light{
+  width:100pt;
+  position: absolute;
+  height:300pt;
+}
+.skyline{
+  width:3000pt;
+  position:absolute;
+  height:1000pt;
+}
+.city {
+  width:24535px;
+  position:absolute;
+  height:1285px;
+}
+.moon {
+  position: absolute;
+  width:150px;
+  height:150px;
+}
+.headline{
+  position: absolute;
+  width: 100vw;
+}
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="724px" height="906px" viewBox="0 0 724 906" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-974.000000, -242.000000)">
+            <g id="Group-2" transform="translate(974.000000, 242.000000)">
+                <g id="Group" fill="#49B364" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="11">
+                    <rect id="Rectangle" x="5.5" y="5.5" width="713" height="504" rx="57"></rect>
+                </g>
+                <rect id="Rectangle-2" fill="#D8D8D8" fill-rule="nonzero" x="166" y="515" width="28" height="391"></rect>
+                <rect id="Rectangle-2" fill="#D8D8D8" fill-rule="nonzero" x="522" y="515" width="28" height="391"></rect>
+                <rect id="Rectangle-3" stroke="#FFFFFF" stroke-width="4" fill-rule="nonzero" x="109" y="343" width="509" height="128" rx="57"></rect>
+                <text id="SCROLL-TO-SEE-HOW-TH" font-family="Avenir-Black, Avenir" font-size="36" font-weight="700" fill="#FFFFFF">
+                    <tspan x="173.924" y="395">SCROLL TO SEE HOW </tspan>
+                    <tspan x="186.56" y="444">THIS IMPACTS YOU!</tspan>
+                </text>
+                <text id="Recent-legislation-h" font-family="Avenir-Medium, Avenir" font-size="36" font-weight="400" line-spacing="64" fill="#FFFFFF">
+                    <tspan x="59.628" y="171">Recent legislation has passed making </tspan>
+                    <tspan x="64.002" y="235">Montgomery the first town with fully </tspan>
+                    <tspan x="199.614" y="299">automated vehicles. </tspan>
+                </text>
+                <text id="ATTENTION" font-family="HiraKakuStd-W8, Hiragino Kaku Gothic Std" font-size="48" font-weight="600" fill="#FFFFFF">
+                    <tspan x="199.012" y="95">ATTENTION</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
