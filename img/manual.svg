@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="297px" height="126px" viewBox="0 0 297 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-21457.000000, -1061.000000)">
+            <g id="Group-25" transform="translate(21457.000000, 1061.000000)">
+                <g id="Group-13" transform="translate(0.000000, 69.000000)" fill="#D8D8D8" fill-rule="nonzero">
+                    <g id="Group-12">
+                        <polygon id="Rectangle-12" points="49.7672813 5.68434189e-14 68.3122831 5.68434189e-14 18.8208036 56.5187127 0 54.1639786"></polygon>
+                    </g>
+                    <g id="Group-12" transform="translate(262.500000, 28.500000) scale(-1, 1) translate(-262.500000, -28.500000) translate(228.000000, 0.000000)">
+                        <polygon id="Rectangle-12" points="49.7672813 5.68434189e-14 68.3122831 5.68434189e-14 18.8208036 56.5187127 0 54.1639786"></polygon>
+                    </g>
+                </g>
+                <g id="car" transform="translate(71.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M144.272789,46.1944089 L136.958014,41.1425332 L130.250721,11.9643323 C128.641501,4.96306065 122.398151,0 115.199646,0 L39.7999751,0 C32.6018489,0 26.3584989,4.96306065 24.7489,11.9643323 L18.0419856,41.1429111 L10.7272108,46.1947868 C5.88780975,49.5368783 3,55.0362307 3,60.9089843 L3,87.1687604 C3,92.0460295 6.96226434,96 11.849764,96 L143.150236,96 C148.037736,96 152,92.0460295 152,87.1687604 L152,60.9089843 C152,55.0358528 149.11219,49.5365004 144.272789,46.1944089 Z" id="Shape" fill="#008DB3"></path>
+                    <path d="M129,42 L27,42 L33.2905818,14.5392586 C34.0380152,11.2795303 36.891162,9 40.233745,9 L115.766255,9 C119.108838,9 121.961985,11.2795303 122.709418,14.5392586 L129,42 Z" id="Shape" fill="#76CDCE"></path>
+                    <g id="Group" transform="translate(15.000000, 63.000000)" fill="#FFFFFF">
+                        <path d="M0.262626506,0.20475 C0.262626506,6.5865 5.49845783,11.76 11.9570964,11.76 C18.4157349,11.76 23.6515663,6.5865 23.6515663,0.20475 L0.262626506,0.20475 Z" id="Shape"></path>
+                        <path d="M102.350711,0.20475 C102.350711,6.5865 107.586542,11.76 114.045181,11.76 C120.503819,11.76 125.739651,6.5865 125.739651,0.20475 L102.350711,0.20475 Z" id="Shape"></path>
+                    </g>
+                    <path d="M149.653556,84 L6.34644371,84 C2.84144134,84 0,86.6863309 0,90 C0,93.3136691 2.84144134,96 6.34644371,96 L149.653556,96 C153.158559,96 156,93.3136691 156,90 C156,86.6863309 153.158559,84 149.653556,84 Z" id="Shape" fill="#CCCCCC"></path>
+                    <path d="M11,96 L11,111.346241 C11,113.364213 12.6120987,115 14.600849,115 L28.399151,115 C30.3879013,115 32,113.364213 32,111.346241 L32,96" id="Shape" fill="#666666"></path>
+                    <path d="M123,96 L123,111.346241 C123,113.364213 124.612099,115 126.600849,115 L140.399151,115 C142.387901,115 144,113.364213 144,111.346241 L144,96" id="Shape" fill="#666666"></path>
+                    <path d="M102,96 L102,97.8526861 C102,102.352442 98.3350001,106 93.813727,106 L67.186273,106 C62.6649999,106 59,102.352442 59,97.8526861 L59,96" id="Shape" fill="#4D4D4D"></path>
+                    <path d="M128,42 L92.9198529,42 L60,9 L114.780515,9 C118.119496,9 120.969569,11.2795303 121.716197,14.5392586 L128,42 Z" id="Shape" fill="#96E0DE"></path>
+                    <rect id="Rectangle-path" fill="#037893" x="51" y="64" width="57" height="5"></rect>
+                    <rect id="Rectangle-path" fill="#037893" x="51" y="71" width="57" height="5"></rect>
+                </g>
+                <g id="Group-14" transform="translate(99.000000, 46.000000)">
+                    <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="100" height="42"></rect>
+                    <text id="MANUAL?" font-family="ArialNarrow-Bold, Arial Narrow" font-size="22" font-weight="bold" fill="#4647FF">
+                        <tspan x="5.42529297" y="29">MANUAL?</tspan>
+                    </text>
+                    <path d="M7.5,10.5 L89.5,10.5" id="Line-2" stroke="#FF0000" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <path d="M7.5,32.25 L89.5,32.25" id="Line-2" stroke="#FF0000" stroke-linecap="square" fill-rule="nonzero"></path>
+                    <circle id="Oval-8" fill="#343434" fill-rule="nonzero" cx="11.5" cy="5.5" r="2.5"></circle>
+                    <circle id="Oval-8" fill="#343434" fill-rule="nonzero" cx="86.5" cy="5.5" r="2.5"></circle>
+                    <circle id="Oval-8" fill="#343434" fill-rule="nonzero" cx="11.5" cy="36.5" r="2.5"></circle>
+                    <circle id="Oval-8" fill="#343434" fill-rule="nonzero" cx="86.5" cy="36.5" r="2.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

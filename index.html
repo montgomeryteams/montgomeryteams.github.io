@@ -42,7 +42,50 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
     <script type="text/javascript">
-
+        function openModal(n){
+            var modal;
+            switch(n){
+                case 1:
+                    modal = $('#modal1');
+                    break;
+                case 2:
+                    modal = $('#modal2');
+                    break;
+                case 3:
+                    modal = $('#modal3');
+                    break;
+                case 4:
+                    modal = $('#modal4');
+                    break;
+                default:
+                    console.log('default')
+                    break;
+            }
+            modal.removeClass('hidden')
+            modal.addClass('visible')
+        }
+        function closeModal(n){
+            var modal;
+            switch(n){
+                case 1:
+                    modal = $('#modal1');
+                    break;
+                case 2:
+                    modal = $('#modal2');
+                    break;
+                case 3:
+                    modal = $('#modal3');
+                    break;
+                case 4:
+                    modal = $('#modal4');
+                    break;
+                default:
+                    console.log('default')
+                    break;
+            }
+            modal.removeClass('visible')
+            modal.addClass('hidden');
+        }
     window.onload = function() {
 
         document.getElementById("main").classList.add("loaded")
@@ -54,6 +97,7 @@
             window.requestAnimationFrame(update)
         }
 
+        
         window.requestAnimationFrame(update)
 
         var ctx = document.getElementById('pieChartDisabled').getContext('2d');
@@ -89,11 +133,32 @@
             updatedChart1 = false;
             $(window).scroll(function () {
                 let scroll = $(this).scrollTop() 
-              if ((scroll > 10000 && scroll < 15000) || (scroll > 20200 && scroll < 30000)) {
-                 $("#background").addClass('night')
-              }else{
-                $("#background").removeClass('night')
-              }
+                if ((scroll > 10000 && scroll < 15000) || (scroll > 20200 && scroll < 30000)) {
+                    $("#background").addClass('night')
+                }else{
+                    $("#background").removeClass('night')
+                }
+
+                if(scroll > 10000){
+                    $('#red').addClass('hidden')
+                    $('#red').removeClass('visible')
+                    $('#green').removeClass('visible')
+                    $('#green').addClass('hidden')
+                }else{
+                   $('#red').addClass('visible')
+                    $('#green').addClass('visible') 
+                }
+                if(scroll > 20200){
+                    $('#bulletin').addClass('hidden')
+                }else{
+                    $('#bulletin').removeClass('hidden')
+                }
+                if(scroll > 23200){
+                    $('.vehicle').addClass('hidden')
+                }else{
+                    $('.vehicle').removeClass('hidden')
+                }
+
             });
         });
     }
@@ -144,9 +209,12 @@
                 <h1 style = "position: absolute; right:-30vw; top:5vh; color:white; font-size:70px" class="lax"
                     data-lax-translate-x = "0 0, 20200 0, 20300 (-0.35*vw)"
                     data-lax-opacity = "0 0, 20200 0, 20300 1, 23000 0"> EFFICIENCY </h1>
-                <h1 style = "position: absolute; right:-30vw; top:5vh; color:white; font-size:70px" class="lax"
+                <div style = "position: absolute; width:30vw; right:-30vw; top:5vh; color:white; " class="lax"
                     data-lax-translate-x = "0 0, 23000 0, 23200 (-0.35*vw)"
-                    data-lax-opacity = "0 0, 23000 0, 23200 1, 25800 1, 26000 0"> FAQ </h1>
+                    data-lax-opacity = "0 0, 23000 0, 23200 1, 25800 1, 26000 0"> 
+                    <h1 style="font-size:70px; margin-bottom:0px; text-align: right;">FAQ</h1>
+                    <h2 style="font-size:30px; margin: 0px; text-align: right;">Click on the cars to find out more! </h2>
+                </div>
                 <h1 style = "position: absolute; right:-30vw; top:5vh; color:white; font-size:70px" class="lax"
                     data-lax-translate-x = "0 0, 26000 0, 26200 (-0.35*vw)"
                     data-lax-opacity = "0 0, 26000 0, 26200 1"> FUTURE </h1>
@@ -166,34 +234,68 @@
                 <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 21200 0, 21300 1, 21700 1, 22000 0">Human drivers often drive inefficiently by doing things like harshly accelerating or braking and idling.</h1>
                 <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 22000 0, 22200 1, 22700 1, 23000 0">A study finds that self-driving cars can be up to 15% more efficient just through better driving practices. </h1>
             </div>
+            <div id="faqmodals" style = "width:100vw; height:100vh; position: absolute;" class = "lax center">
+                <div id = "modal1" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                    <div onclick = "closeModal(1)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
+                    <h1>If a self-driving car is involved in an accident, who is liable? </h1>
+                    <h2>In cases where the software is found to be at fault, manufacturers have agreed to assume full legal liability.
+                    If the reason for the crash was misuse of the software by a human operator, the operator of the vehicle is still liable.
+                    If a third party was found to be at fault, that person is liable, not the manufacturer or the operator of the self-driving car.
+                    </h2>
+                </div>
+                <div id = "modal2" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                    <div onclick = "closeModal(2)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
+                    <h1>Fully automated vehicles share information when communicating with other vehicles. Is my privacy protected?</h1>
+                    <h2>All data shared with third parties is de-identified, meaning that no information that could be used to link to a specific vehicle or user is shared.
+                    </h2>
+                </div>
+                <div id = "modal3" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                    <div onclick = "closeModal(3)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
+                    <h1>As the owner of an automated vehicle, do I still have the option to drive myself?</h1>
+                    <h2>While fully automated vehicles are capable of performing all functions under all reasonable conditions, the licensed human operator may take control at any time.</h2>
+                </div>
+                <div id = "modal4" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                    <div onclick = "closeModal(4)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
+                    <h1>When will I be able to use a self driving car in Montgomery?</h1>
+                    <h2> Various self driving vehicles have been submitted for approval and are currently in the 6 month testing stage. </h2>
+                </div>
+            </div>
+            <div style="width:1191px; height:100vh; right:-1191px; position: absolute;" class = "lax"
+                data-lax-opacity = "23100 0, 23200 1"
+                data-lax-translate-x="24172 0, 26570 -2661">
+                <div onclick = "openModal(1)" class = "lax lot" style="background:url('img/liability.svg') no-repeat; bottom:0px;"></div>
+                <div onclick = "openModal(2)"class = "lax lot" style="background:url('img/privacy.svg') no-repeat; bottom:0px; left:297px"></div>
+                <div onclick = "openModal(3)"class = "lax lot" style="background:url('img/manual.svg') no-repeat; bottom:-10px; left:594px"></div>
+                <div onclick = "openModal(4)"class = "lax lot" style="background:url('img/when.svg') no-repeat; bottom:15px; left:891px"></div>
+            </div>
             <div class="lax car" style="transform: scale(1.5); background: url('img/automobile.svg') no-repeat; bottom:-800px"
                 data-lax-translate-x= "0 (0.1*vw), (100*vh) vw"
-                data-lax-translate-y="0 0, 1000 -550"
+                data-lax-translate-y="0 0, 1000 -550, 23200 -550, 23300 -520"
                 data-lax-opacity="0 1, 17299 1, 17400 0, 20100 0, 20200 1"></div>
 
-            <div class = "lax car" style="transform: scale(1.25); background:url('img/suv.svg') no-repeat; bottom:20px; left:0vw;"
+            <div class = "lax car vehicle" style="transform: scale(1.25); background:url('img/suv.svg') no-repeat; bottom:20px; left:0vw;"
                 data-lax-opacity = "0 0, 20100 0, 20200 1, 23200 0"
                 data-lax-translate-x= "0 0, (100*vh) vw"> </div>
 
-            <div class = "lax car" style="transform: scale(1.25); background:url('img/car.svg') no-repeat; bottom:-20px; right:20px;"
+            <div class = "lax car vehicle" style="transform: scale(1.25); background:url('img/car.svg') no-repeat; bottom:-20px; right:20px;"
                 data-lax-opacity = "0 0, 21300 0, 21400 1"
                 data-lax-translate-x = "21400 0, 21500 (-0.3*vw), 22200 (-0.4*vw), 25000 (-1vw)"> </div>
 
-            <div class = "lax city" style = "background: url('img/streetlight-red.svg') no-repeat; bottom:0;"
+            <div id = "red" class = "lax city" style = "background: url('img/streetlight-red.svg') no-repeat; bottom:0;"
                 data-lax-opacity="0 1, 9149 1, 9150 0"
                 data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 13000 -12000"></div>
-            <div class = "lax city" style = "background: url('img/streetlight-green.svg') no-repeat; bottom:0;"
+            <div id = "green" class = "lax city" style = "background: url('img/streetlight-green.svg') no-repeat; bottom:0;"
                 data-lax-opacity="0 0, 9149 0, 9150 1"
                 data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 13000 -12000"> </div>
-            <div style = "width:100vw; height:100vh; position: absolute;" class = "lax"
+            <div id = "bulletin" style = "width:100vw; height:100vh; position: absolute; visibility: visible;" class = "lax"
                 data-lax-opacity="0 0, 17799 0, 17850 1, 20100 1, 20200 0">
                 <h1 style = "position: absolute; right:-5vw; top:5vh; color:white; font-size:80px" class="lax"
                     data-lax-translate-x = "0 0, 17850 0, 18000 (-0.1*vw)"> EVERYONE </h1>
-                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:60px" class="lax"
+                <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:60px" class="lax"
                     data-lax-translate-x = "0 0, 17850 0, 18000 (-0.55*vw), 18500 (-0.55*vw), 18700 0"> Over 15% of Somerset County is aged 65 and older, and nearly 15,000 people in Somerset County under the age of 65 have a disability. </h2>
-                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:55px" class="lax"
+                <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:55px" class="lax"
                     data-lax-translate-x = "0 0, 18750 0, 18950 (-0.55*vw), 19300 (-0.55*vw), 19400 0"> Involvement in fatal crashes, per mile traveled, begins increasing among drivers ages 70‒74 and are highest among drivers ages 85 and older. </h2>
-                <h2 style = "position: absolute; right:-50vw; bottom:20vh; text-align:right;width:50vw; color:white; font-size:50px" class="lax"
+                <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:50px" class="lax"
                     data-lax-translate-x = "0 0, 19400 0, 19500 (-0.55*vw), 19800 (-0.55*vw), 19850 0"> This trend has been attributed more to an increased susceptibility to injury and medical complications among older drivers rather than an increased risk of crash involvement. </h2>
                 <h2 style = "position: absolute; top: 30vh; opacity: 0;text-align:right;width:80vw; right:10vw; text-align: center; color:white; font-size:60px" class="lax"
                     data-lax-opacity = "0 0, 19849 0, 19900 1, 20100 1, 20200 0"> With self driving cars, disabled and elderly can stay mobile and independent without putting themselves and others at risk. </h2>
@@ -207,6 +309,7 @@
                 </div>
 
             </div>
+            
             
         </div>
     </div>

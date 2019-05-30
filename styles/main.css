@@ -38,8 +38,13 @@ h4 {
   background: #3b4560 !important;
 }
 .car {
-  width: 200pt;
+  width: 100pt;
   height: 100pt;
+  position: absolute;
+}
+.lot{
+  width:297px;
+  height:30vh;
   position: absolute;
 }
 
@@ -69,6 +74,12 @@ h4 {
   position: absolute;
   width:150px;
   height:150px;
+}
+.hidden{
+  visibility: hidden !important;
+}
+.visible{
+  visibility: visible !important;
 }
 .headline{
   position: absolute;
