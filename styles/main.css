@@ -19,8 +19,44 @@ h4 {
   opacity: 0;
   transition: opacity 200ms;
   position:fixed;
+  display: block;
 }
 
+@media only screen and (orientation:portrait){
+
+  #main {
+
+   height: 100vw;
+
+   -webkit-transform: rotate(90deg);
+
+   -moz-transform: rotate(90deg);
+
+   -o-transform: rotate(90deg);
+
+   -ms-transform: rotate(90deg);
+
+   transform: rotate(90deg);
+
+  }
+
+}
+
+@media only screen and (orientation:landscape){
+
+  #main {
+
+  -webkit-transform: rotate(0deg);
+
+  -moz-transform: rotate(0deg);
+
+  -o-transform: rotate(0deg);
+
+  -ms-transform: rotate(0deg);
+
+  transform: rotate(0deg);
+
+   }
 #main.loaded {
   opacity: 1;
 }
@@ -69,6 +105,11 @@ h4 {
   width:30239px;
   position:absolute;
   height:1285px;
+}
+.city-bg{
+  position: absolute;
+  width:1793px;
+  height:792px;
 }
 .moon {
   position: absolute;
