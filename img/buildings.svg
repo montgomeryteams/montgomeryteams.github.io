@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24505px" height="1285px" viewBox="0 0 24505 1285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="30239px" height="1285px" viewBox="0 0 30239 1285" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
@@ -19,6 +19,36 @@
         </linearGradient>
         <rect id="path-5" x="56.6" y="44.8" width="15.1" height="28.8"></rect>
         <filter x="-49.7%" y="-26.0%" width="199.3%" height="152.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.398517219   0 0 0 0 0.398517219   0 0 0 0 0.398517219  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="56.6" y="44.8" width="15.1" height="28.8"></rect>
+        <filter x="-49.7%" y="-26.0%" width="199.3%" height="152.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.398517219   0 0 0 0 0.398517219   0 0 0 0 0.398517219  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="56.6" y="44.8" width="15.1" height="28.8"></rect>
+        <filter x="-49.7%" y="-26.0%" width="199.3%" height="152.1%" filterUnits="objectBoundingBox" id="filter-10">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.398517219   0 0 0 0 0.398517219   0 0 0 0 0.398517219  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="56.6" y="44.8" width="15.1" height="28.8"></rect>
+        <filter x="-49.7%" y="-26.0%" width="199.3%" height="152.1%" filterUnits="objectBoundingBox" id="filter-12">
             <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feMorphology radius="1.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
@@ -67,7 +97,7 @@
                 <rect id="Rectangle-path" fill="#C8B2CE" x="68.557" y="10.182" width="13.667" height="11.285"></rect>
                 <rect id="Rectangle-path" fill="#C8B2CE" x="82.224" y="0.895" width="13.655" height="20.571"></rect>
             </g>
-            <rect id="Rectangle-path" fill="#464949" x="0" y="510.354" width="24542" height="158.646"></rect>
+            <rect id="Rectangle-path" fill="#464949" x="0" y="510.354" width="30276" height="158.646"></rect>
             <g id="Group" transform="translate(28.000000, 38.000000)">
                 <polygon id="Shape" fill="#FCF9ED" points="23.375 75.037 23.375 43.161 76.753 0.844 130.128 43.161 130.133 43.161 130.133 75.037 153.018 75.037 153.018 472.11 0.49 472.11 0.49 75.037"></polygon>
                 <rect id="Rectangle-path" fill="#E5DFC6" x="13.477" y="99.181" width="128.943" height="15.129"></rect>
@@ -2450,109 +2480,216 @@
                 <rect id="Rectangle-11" fill="#454545" transform="translate(12.000000, 33.000000) rotate(-11.000000) translate(-12.000000, -33.000000) " x="10" y="7" width="4" height="52"></rect>
             </g>
         </g>
-        <g id="Group-23" transform="translate(22337.000000, 1112.000000)" fill-rule="nonzero">
-            <g id="Group-21" fill="url(#linearGradient-4)">
-                <g id="Group-20" transform="translate(0.000000, 4.000000)">
-                    <g id="Group-19" transform="translate(0.000000, 4.000000)">
-                        <g id="Group-18" transform="translate(0.000000, 4.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+        <g id="Group-29" transform="translate(22337.000000, 1112.000000)" fill-rule="nonzero">
+            <g id="Group-23">
+                <g id="Group-21" fill="url(#linearGradient-4)">
+                    <g id="Group-20" transform="translate(0.000000, 4.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
                         </g>
-                        <g id="Group-18" transform="translate(230.000000, 0.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
                         </g>
                     </g>
-                    <g id="Group-19" transform="translate(455.000000, 0.000000)">
-                        <g id="Group-18" transform="translate(0.000000, 4.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                    <g id="Group-20" transform="translate(916.000000, 0.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
                         </g>
-                        <g id="Group-18" transform="translate(230.000000, 0.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
                         </g>
                     </g>
                 </g>
-                <g id="Group-20" transform="translate(916.000000, 0.000000)">
-                    <g id="Group-19" transform="translate(0.000000, 4.000000)">
-                        <g id="Group-18" transform="translate(0.000000, 4.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
-                        </g>
-                        <g id="Group-18" transform="translate(230.000000, 0.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
-                        </g>
-                    </g>
-                    <g id="Group-19" transform="translate(455.000000, 0.000000)">
-                        <g id="Group-18" transform="translate(0.000000, 4.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
-                        </g>
-                        <g id="Group-18" transform="translate(230.000000, 0.000000)">
-                            <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
-                            <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
-                            <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
-                            <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
-                            <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
-                            <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
-                        </g>
-                    </g>
+                <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
+                    <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
+                    <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
+                    <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
+                    <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
+                    <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
+                    <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
+                    <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
                 </g>
             </g>
-            <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
-                <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
-                <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
-                <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
-                <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
-                <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
-                <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
-                <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
+            <g id="Group-23" transform="translate(1822.000000, 0.000000)">
+                <g id="Group-21" fill="url(#linearGradient-4)">
+                    <g id="Group-20" transform="translate(0.000000, 4.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-20" transform="translate(916.000000, 0.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
+                    <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
+                    <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
+                    <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
+                    <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
+                    <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
+                    <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
+                    <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
+                </g>
             </g>
         </g>
         <g id="buildings-fg-night" transform="translate(22411.000000, 615.000000)" fill-rule="nonzero">
@@ -2945,6 +3082,1446 @@
                     <rect x="0.9" y="116.5" width="99.3" height="8.5"></rect>
                     <rect x="0.9" y="135.4" width="99.3" height="8.5"></rect>
                     <rect x="0.9" y="155" width="99.3" height="8.5"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="buildings-fg-night" transform="translate(24364.000000, 616.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(859.000000, 0.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="95.6" height="489.9"></rect>
+                <g transform="translate(42.000000, 37.000000)" id="Rectangle-path">
+                    <rect x="0.1" y="0.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="19.8" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="39.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="59" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="78.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="98.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="117.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="137.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="156.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="176.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="196" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="215.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="235.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="254.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="274.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="293.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="313.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="333" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="352.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="372.2" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="391.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="411.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="430.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="450.4" width="42.2" height="8.3"></rect>
+                </g>
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="6" height="490"></rect>
+                <rect id="Rectangle-path" x="0.3" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="14" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="27.6" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="41.3" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="55" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="68.6" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="82.3" y="0.9" width="13.7" height="20.6"></rect>
+            </g>
+            <g id="Group" transform="translate(0.000000, 38.000000)">
+                <polygon id="Shape" stroke="#44E2C9" stroke-width="3" points="23.4 75 23.4 43.2 76.8 0.8 130.2 43.2 130.2 43.2 130.2 75 153.1 75 153.1 472.1 0.5 472.1 0.5 75"></polygon>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="99.2" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="131.6" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="164" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="196.4" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="228.8" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="261.3" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="293.7" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="326.1" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="358.5" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="390.9" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="61.7" y="422.4" width="30.3" height="49.7"></rect>
+                <g transform="translate(15.000000, 422.000000)" id="Rectangle-path" stroke="#44E2C9" stroke-width="3">
+                    <rect x="92.8" y="0.4" width="30.3" height="49.7"></rect>
+                    <rect x="0.6" y="0.4" width="30.3" height="49.7"></rect>
+                </g>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="105.9" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="80" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="32.8" y="44.8" width="15.1" height="28.8"></rect>
+                <g id="Rectangle-path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use stroke="#44E2C9" stroke-width="3" xlink:href="#path-7"></use>
+                </g>
+            </g>
+            <g id="Group" transform="translate(565.000000, 86.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="129.1 61 129.1 30.8 129.1 30.8 76.7 0.5 24.2 30.8 24.2 30.8 24.2 61 0.3 61 0.3 424.1 153 424.1 153 61"></polygon>
+                <g transform="translate(15.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 136.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.9" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 298.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.1" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 190.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.2" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 243.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 352.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(351.000000, 164.000000)" stroke="#44E2C9" stroke-width="4">
+                <path d="M77.6,258.3 L77.6,258 L78.3,200.2 C78.7,196.8 81.2,194.8 85.8,194.3 C85.8,192.7 85.8,191.2 85.8,189.6 C83,189.6 80.2,189.6 77.4,189.6 L77.9,139.6 C78.4,136.8 80.7,135.3 84.6,135 C84.6,133.5 84.6,132 84.6,130.5 C82.5,130.5 80.3,130.5 78.2,130.5 L78.2,128.9 L78.2,128.7 L78.2,120.7 C77.6,120.7 67,120.4 63.7,120.4 C62,100.5 60.3,80.6 58.7,60.6 C57.8,60.6 57,60.6 56.1,60.6 C55.6,62.5 55.1,64.4 54.6,66.3 C51.1,66.4 49.2,66.4 45.8,66.4 L45.3,66.4 C44.7,49.7 45.3,37.6 44.9,18.2 L68.9,18.4 C66.6,16.8 64.3,15.1 62,13.5 C64.7,11.7 67.3,10 70,8.2 C64.2,8.1 55.8,8.1 44.6,8.2 C44.6,7.3 44.5,6.4 44.5,5.5 L44.5,5.2 C44.2,-0.2 44.2,-0.8 43.8,5.3 C42.4,27 43.1,45.9 42.7,66.4 C39.6,66.4 36.5,66.4 33.3,66.3 C32.8,64.4 32.3,62.5 31.8,60.6 C30.9,60.6 30.1,60.6 29.2,60.6 C27.5,80.5 25.8,100.4 24.2,120.4 C20.9,120.4 10.3,120.7 9.7,120.7 L9.7,128.7 L9.7,128.9 L9.7,130.5 C7.6,130.5 5.4,130.5 3.3,130.5 C3.3,132 3.3,133.5 3.3,135 C7.2,135.3 9.4,136.8 10,139.6 L10.5,189.6 C7.7,189.6 4.9,189.6 2.1,189.6 C2.1,191.2 2.1,192.7 2.1,194.3 C6.6,194.9 9.1,196.8 9.6,200.2 L10.3,258 L10.3,258.3 C7,258.3 3.8,258.3 0.5,258.3 C0.5,260.7 0.5,263.1 0.5,265.5 C4.3,266.2 6,268.5 5.8,272.5 L5.9,346.3 L44.4,346.3 L82,346.3 L82.1,272.5 C81.9,268.5 83.6,266.2 87.4,265.5 C87.4,263.1 87.4,260.7 87.4,258.3 C84.1,258.3 80.8,258.3 77.6,258.3 Z" id="Shape"></path>
+                <path d="M60.9,162.9 C60.9,153.6 53.5,146.1 44.2,146 C44.1,146 44,146 43.9,146 C34.5,146 26.9,153.6 26.9,163 C26.9,172.4 34.5,179.9 43.9,179.9 C44,179.9 44.1,179.9 44.2,179.9 C53.5,179.7 60.9,172.1 60.9,162.9 Z M54.6,162.4 C53.7,163.7 53.1,164.4 52.4,165.6 C52.4,165.1 52.3,164.4 52.4,163.9 C49.5,164 42.6,164.1 41.9,164.1 C41.9,163.4 41.8,162.7 41.8,162 C41.8,159.7 41.8,152.2 41.8,151.3 C41.3,151.4 40.9,151.2 40.5,151.3 C42.1,149.6 42.1,149.5 43.5,148 C44.3,149.2 44.8,149.8 45.9,151.4 C45.4,151.3 45.1,151.4 44.4,151.4 C44.6,155.5 44.6,157.9 44.8,161.8 C47.4,161.9 49.1,161.8 51.9,161.9 C51.8,161.4 52.1,160.2 52,159.8 C53,160.7 53.4,161.1 54.6,162.4 Z" id="Shape"></path>
+                <path d="M55.4,327.4 L55.4,297.1 C55.4,289.8 50.3,284 43.9,284 C37.6,284 32.4,289.9 32.4,297.1 L32.4,327.4 L55.4,327.4 Z" id="Shape"></path>
+                <path d="M55.4,247.8 L55.4,217.5 C55.4,210.2 50.3,204.4 43.9,204.4 C37.6,204.4 32.4,210.3 32.4,217.5 L32.4,247.8 L55.4,247.8 Z" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(154.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.9 27.8 125.9 14.2 109.5 14.2 109.5 0.7 30.8 0.7 30.8 14.2 14.4 14.2 14.4 27.8 0.6 27.8 0.6 331.4 139.8 331.4 139.8 27.8"></polygon>
+                <rect id="Rectangle-path" x="37.1" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.7" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.4" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="115" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(1465.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.7 27.8 125.7 14.2 109.3 14.2 109.3 0.7 30.6 0.7 30.6 14.2 14.2 14.2 14.2 27.8 0.3 27.8 0.3 331.4 139.5 331.4 139.5 27.8"></polygon>
+                <rect id="Rectangle-path" x="36.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="114.8" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(710.000000, 320.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="242.2 14.2 242.2 0.6 210.6 0.6 59 0.6 27.4 0.6 27.4 14.2 0.7 14.2 0.7 190.5 268.9 190.5 268.9 14.2"></polygon>
+                <g transform="translate(20.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="42.1" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.9" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="83.3" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(20.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="42.1" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="42.1" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="41.4" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.2" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="82.6" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="41.4" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="41.4" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1249.000000, 255.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="12.4" y="67.5" width="203.4" height="187.4"></rect>
+                <polygon id="Shape" points="206.5 43.1 227.8 87.3 0.4 87.3 21.6 43.1"></polygon>
+                <path d="M127,14.8 L134.2,14.8 C135.4,6.5 144.1,0.2 154.6,0.2 C165.1,0.2 173.8,6.6 175,14.8 L182.2,14.8 L182.2,22.9 L175.1,22.9 L175.1,55.2 L134,55.2 L134,22.9 L126.9,22.9 L127,14.8 Z" id="Shape"></path>
+                <path d="M32.3,14.8 L39.5,14.8 C40.7,6.5 49.4,0.2 59.9,0.2 C70.4,0.2 79.1,6.6 80.3,14.8 L87.5,14.8 L87.5,22.9 L80.4,22.9 L80.4,55.2 L39.2,55.2 L39.2,22.9 L32.1,22.9 L32.3,14.8 Z" id="Shape"></path>
+                <g transform="translate(30.000000, 6.000000)">
+                    <g transform="translate(0.000000, 83.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.3" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 138.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.8" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 191.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0" width="29.8" height="38.6"></rect>
+                    </g>
+                    <path d="M111.6,11.3 C112.1,5.4 117.7,0.8 124.6,0.8 C131.5,0.8 137.1,5.4 137.6,11.3 L111.6,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="112.9" y="26.3" width="23.4" height="13"></rect>
+                    <path d="M17,11.3 C17.5,5.4 23.1,0.8 30,0.8 C36.9,0.8 42.5,5.4 43,11.3 L17,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="18.3" y="26.3" width="23.4" height="13"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1632.000000, 59.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.6" y="0.1" width="319.7" height="451.4"></rect>
+                <rect id="Rectangle-path" x="16.8" y="53.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="80.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="107.4" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="135" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="161.6" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="189.3" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="215.9" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="243.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="271.2" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="298.8" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="325.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="353.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="379.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="407.4" width="287.2" height="12"></rect>
+            </g>
+            <g id="Group" transform="translate(978.000000, 118.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.7" y="66.4" width="217.9" height="325.4"></rect>
+                <path d="M110.1,0.9 C50.1,0.9 1.6,30.7 1.6,67.4 L218.7,67.4 C218.6,30.7 170,0.9 110.1,0.9 Z" id="Shape"></path>
+                <g transform="translate(11.000000, 6.000000)" id="Shape">
+                    <path d="M156.5,43.6 L196.7,43.6 C192.1,34.6 183.8,26.3 172.3,19.2 C164,14.1 154.6,10.1 144.3,7 C148.2,17.2 152.6,29.7 156.5,43.6 Z"></path>
+                    <path d="M53.1,7.1 C42.8,10.1 33.4,14.2 25.1,19.3 C13.6,26.3 5.3,34.7 0.6,43.7 L40.8,43.7 C44.7,29.7 49.1,17.2 53.1,7.1 Z"></path>
+                    <path d="M47.7,43.6 L149.5,43.6 C145.2,28.5 140.3,15.1 136.2,5 C124.4,2.2 111.7,0.8 98.6,0.8 C85.5,0.8 72.8,2.2 61,5 C56.9,15.2 52,28.5 47.7,43.6 Z"></path>
+                </g>
+                <g transform="translate(9.000000, 85.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.3" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.4" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 38.000000)">
+                        <rect x="0.3" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 75.000000)">
+                        <rect x="0.3" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.5" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 113.000000)">
+                        <rect x="0.3" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.1" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 150.000000)">
+                        <rect x="0.3" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.6" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 188.000000)">
+                        <rect x="0.3" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.2" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 225.000000)">
+                        <rect x="0.3" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.7" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 263.000000)">
+                        <rect x="0.3" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.3" width="24.9" height="24.9"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1067.000000, 390.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="157.9 37.7 128.3 0.3 107.3 26.9 104.6 26.9 104.6 13.6 106.2 13.6 106.2 10.4 97 10.4 97 13.6 98.7 13.6 98.7 26.9 59.6 26.9 59.6 13.6 61.3 13.6 61.3 10.4 52 10.4 52 13.6 53.7 13.6 53.7 26.9 51.4 26.9 30.4 0.3 0.9 37.7 0.8 37.7 0.8 119.8 47.3 119.8 60 119.8 98.7 119.8 116.2 119.8 157.9 119.8"></polygon>
+                <g transform="translate(8.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.7" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11.1" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.7" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M36,33.4 L36,23.1 C36,21.3 33.5,19.8 30.4,19.8 C27.3,19.8 24.8,21.3 24.8,23.1 L24.8,33.4 L36,33.4 Z" id="Shape"></path>
+                <g transform="translate(106.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.6" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.6" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M133.9,33.4 L133.9,23.1 C133.9,21.3 131.4,19.8 128.3,19.8 C125.2,19.8 122.7,21.3 122.7,23.1 L122.7,33.4 L133.9,33.4 Z" id="Shape"></path>
+                <path d="M89.6,72.7 L89.6,52.7 C89.6,49.2 85.2,46.3 79.7,46.3 C74.2,46.3 69.8,49.2 69.8,52.7 L69.8,72.7 L89.6,72.7 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="69.5" y="83" width="19.9" height="36.8"></rect>
+            </g>
+            <g id="Group" transform="translate(243.000000, 296.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <path d="M98.5,37.8 C97.8,16.9 80.7,0.1 59.5,0.1 C38.3,0.1 21.2,16.9 20.5,37.8 L0.8,37.8 L0.8,213.8 L118.1,213.8 L118.1,37.8 L98.5,37.8 Z" id="Shape"></path>
+                <g transform="translate(9.000000, 44.000000)" id="Rectangle-path">
+                    <rect x="0.9" y="0" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="19" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="38.6" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="58.2" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="77.9" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="96.8" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="116.5" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="135.4" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="155" width="99.3" height="8.5"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="buildings-fg-night" transform="translate(26317.000000, 614.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(859.000000, 0.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="95.6" height="489.9"></rect>
+                <g transform="translate(42.000000, 37.000000)" id="Rectangle-path">
+                    <rect x="0.1" y="0.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="19.8" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="39.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="59" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="78.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="98.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="117.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="137.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="156.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="176.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="196" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="215.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="235.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="254.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="274.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="293.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="313.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="333" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="352.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="372.2" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="391.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="411.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="430.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="450.4" width="42.2" height="8.3"></rect>
+                </g>
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="6" height="490"></rect>
+                <rect id="Rectangle-path" x="0.3" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="14" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="27.6" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="41.3" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="55" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="68.6" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="82.3" y="0.9" width="13.7" height="20.6"></rect>
+            </g>
+            <g id="Group" transform="translate(0.000000, 38.000000)">
+                <polygon id="Shape" stroke="#44E2C9" stroke-width="3" points="23.4 75 23.4 43.2 76.8 0.8 130.2 43.2 130.2 43.2 130.2 75 153.1 75 153.1 472.1 0.5 472.1 0.5 75"></polygon>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="99.2" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="131.6" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="164" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="196.4" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="228.8" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="261.3" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="293.7" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="326.1" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="358.5" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="390.9" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="61.7" y="422.4" width="30.3" height="49.7"></rect>
+                <g transform="translate(15.000000, 422.000000)" id="Rectangle-path" stroke="#44E2C9" stroke-width="3">
+                    <rect x="92.8" y="0.4" width="30.3" height="49.7"></rect>
+                    <rect x="0.6" y="0.4" width="30.3" height="49.7"></rect>
+                </g>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="105.9" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="80" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="32.8" y="44.8" width="15.1" height="28.8"></rect>
+                <g id="Rectangle-path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                    <use stroke="#44E2C9" stroke-width="3" xlink:href="#path-9"></use>
+                </g>
+            </g>
+            <g id="Group" transform="translate(565.000000, 86.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="129.1 61 129.1 30.8 129.1 30.8 76.7 0.5 24.2 30.8 24.2 30.8 24.2 61 0.3 61 0.3 424.1 153 424.1 153 61"></polygon>
+                <g transform="translate(15.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 136.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.9" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 298.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.1" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 190.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.2" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 243.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 352.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(351.000000, 164.000000)" stroke="#44E2C9" stroke-width="4">
+                <path d="M77.6,258.3 L77.6,258 L78.3,200.2 C78.7,196.8 81.2,194.8 85.8,194.3 C85.8,192.7 85.8,191.2 85.8,189.6 C83,189.6 80.2,189.6 77.4,189.6 L77.9,139.6 C78.4,136.8 80.7,135.3 84.6,135 C84.6,133.5 84.6,132 84.6,130.5 C82.5,130.5 80.3,130.5 78.2,130.5 L78.2,128.9 L78.2,128.7 L78.2,120.7 C77.6,120.7 67,120.4 63.7,120.4 C62,100.5 60.3,80.6 58.7,60.6 C57.8,60.6 57,60.6 56.1,60.6 C55.6,62.5 55.1,64.4 54.6,66.3 C51.1,66.4 49.2,66.4 45.8,66.4 L45.3,66.4 C44.7,49.7 45.3,37.6 44.9,18.2 L68.9,18.4 C66.6,16.8 64.3,15.1 62,13.5 C64.7,11.7 67.3,10 70,8.2 C64.2,8.1 55.8,8.1 44.6,8.2 C44.6,7.3 44.5,6.4 44.5,5.5 L44.5,5.2 C44.2,-0.2 44.2,-0.8 43.8,5.3 C42.4,27 43.1,45.9 42.7,66.4 C39.6,66.4 36.5,66.4 33.3,66.3 C32.8,64.4 32.3,62.5 31.8,60.6 C30.9,60.6 30.1,60.6 29.2,60.6 C27.5,80.5 25.8,100.4 24.2,120.4 C20.9,120.4 10.3,120.7 9.7,120.7 L9.7,128.7 L9.7,128.9 L9.7,130.5 C7.6,130.5 5.4,130.5 3.3,130.5 C3.3,132 3.3,133.5 3.3,135 C7.2,135.3 9.4,136.8 10,139.6 L10.5,189.6 C7.7,189.6 4.9,189.6 2.1,189.6 C2.1,191.2 2.1,192.7 2.1,194.3 C6.6,194.9 9.1,196.8 9.6,200.2 L10.3,258 L10.3,258.3 C7,258.3 3.8,258.3 0.5,258.3 C0.5,260.7 0.5,263.1 0.5,265.5 C4.3,266.2 6,268.5 5.8,272.5 L5.9,346.3 L44.4,346.3 L82,346.3 L82.1,272.5 C81.9,268.5 83.6,266.2 87.4,265.5 C87.4,263.1 87.4,260.7 87.4,258.3 C84.1,258.3 80.8,258.3 77.6,258.3 Z" id="Shape"></path>
+                <path d="M60.9,162.9 C60.9,153.6 53.5,146.1 44.2,146 C44.1,146 44,146 43.9,146 C34.5,146 26.9,153.6 26.9,163 C26.9,172.4 34.5,179.9 43.9,179.9 C44,179.9 44.1,179.9 44.2,179.9 C53.5,179.7 60.9,172.1 60.9,162.9 Z M54.6,162.4 C53.7,163.7 53.1,164.4 52.4,165.6 C52.4,165.1 52.3,164.4 52.4,163.9 C49.5,164 42.6,164.1 41.9,164.1 C41.9,163.4 41.8,162.7 41.8,162 C41.8,159.7 41.8,152.2 41.8,151.3 C41.3,151.4 40.9,151.2 40.5,151.3 C42.1,149.6 42.1,149.5 43.5,148 C44.3,149.2 44.8,149.8 45.9,151.4 C45.4,151.3 45.1,151.4 44.4,151.4 C44.6,155.5 44.6,157.9 44.8,161.8 C47.4,161.9 49.1,161.8 51.9,161.9 C51.8,161.4 52.1,160.2 52,159.8 C53,160.7 53.4,161.1 54.6,162.4 Z" id="Shape"></path>
+                <path d="M55.4,327.4 L55.4,297.1 C55.4,289.8 50.3,284 43.9,284 C37.6,284 32.4,289.9 32.4,297.1 L32.4,327.4 L55.4,327.4 Z" id="Shape"></path>
+                <path d="M55.4,247.8 L55.4,217.5 C55.4,210.2 50.3,204.4 43.9,204.4 C37.6,204.4 32.4,210.3 32.4,217.5 L32.4,247.8 L55.4,247.8 Z" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(154.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.9 27.8 125.9 14.2 109.5 14.2 109.5 0.7 30.8 0.7 30.8 14.2 14.4 14.2 14.4 27.8 0.6 27.8 0.6 331.4 139.8 331.4 139.8 27.8"></polygon>
+                <rect id="Rectangle-path" x="37.1" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.7" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.4" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="115" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(1465.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.7 27.8 125.7 14.2 109.3 14.2 109.3 0.7 30.6 0.7 30.6 14.2 14.2 14.2 14.2 27.8 0.3 27.8 0.3 331.4 139.5 331.4 139.5 27.8"></polygon>
+                <rect id="Rectangle-path" x="36.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="114.8" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(710.000000, 320.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="242.2 14.2 242.2 0.6 210.6 0.6 59 0.6 27.4 0.6 27.4 14.2 0.7 14.2 0.7 190.5 268.9 190.5 268.9 14.2"></polygon>
+                <g transform="translate(20.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="42.1" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.9" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="83.3" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(20.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="42.1" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="42.1" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="41.4" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.2" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="82.6" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="41.4" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="41.4" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1249.000000, 255.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="12.4" y="67.5" width="203.4" height="187.4"></rect>
+                <polygon id="Shape" points="206.5 43.1 227.8 87.3 0.4 87.3 21.6 43.1"></polygon>
+                <path d="M127,14.8 L134.2,14.8 C135.4,6.5 144.1,0.2 154.6,0.2 C165.1,0.2 173.8,6.6 175,14.8 L182.2,14.8 L182.2,22.9 L175.1,22.9 L175.1,55.2 L134,55.2 L134,22.9 L126.9,22.9 L127,14.8 Z" id="Shape"></path>
+                <path d="M32.3,14.8 L39.5,14.8 C40.7,6.5 49.4,0.2 59.9,0.2 C70.4,0.2 79.1,6.6 80.3,14.8 L87.5,14.8 L87.5,22.9 L80.4,22.9 L80.4,55.2 L39.2,55.2 L39.2,22.9 L32.1,22.9 L32.3,14.8 Z" id="Shape"></path>
+                <g transform="translate(30.000000, 6.000000)">
+                    <g transform="translate(0.000000, 83.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.3" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 138.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.8" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 191.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0" width="29.8" height="38.6"></rect>
+                    </g>
+                    <path d="M111.6,11.3 C112.1,5.4 117.7,0.8 124.6,0.8 C131.5,0.8 137.1,5.4 137.6,11.3 L111.6,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="112.9" y="26.3" width="23.4" height="13"></rect>
+                    <path d="M17,11.3 C17.5,5.4 23.1,0.8 30,0.8 C36.9,0.8 42.5,5.4 43,11.3 L17,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="18.3" y="26.3" width="23.4" height="13"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1632.000000, 59.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.6" y="0.1" width="319.7" height="451.4"></rect>
+                <rect id="Rectangle-path" x="16.8" y="53.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="80.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="107.4" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="135" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="161.6" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="189.3" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="215.9" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="243.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="271.2" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="298.8" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="325.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="353.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="379.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="407.4" width="287.2" height="12"></rect>
+            </g>
+            <g id="Group" transform="translate(978.000000, 118.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.7" y="66.4" width="217.9" height="325.4"></rect>
+                <path d="M110.1,0.9 C50.1,0.9 1.6,30.7 1.6,67.4 L218.7,67.4 C218.6,30.7 170,0.9 110.1,0.9 Z" id="Shape"></path>
+                <g transform="translate(11.000000, 6.000000)" id="Shape">
+                    <path d="M156.5,43.6 L196.7,43.6 C192.1,34.6 183.8,26.3 172.3,19.2 C164,14.1 154.6,10.1 144.3,7 C148.2,17.2 152.6,29.7 156.5,43.6 Z"></path>
+                    <path d="M53.1,7.1 C42.8,10.1 33.4,14.2 25.1,19.3 C13.6,26.3 5.3,34.7 0.6,43.7 L40.8,43.7 C44.7,29.7 49.1,17.2 53.1,7.1 Z"></path>
+                    <path d="M47.7,43.6 L149.5,43.6 C145.2,28.5 140.3,15.1 136.2,5 C124.4,2.2 111.7,0.8 98.6,0.8 C85.5,0.8 72.8,2.2 61,5 C56.9,15.2 52,28.5 47.7,43.6 Z"></path>
+                </g>
+                <g transform="translate(9.000000, 85.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.3" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.4" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 38.000000)">
+                        <rect x="0.3" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 75.000000)">
+                        <rect x="0.3" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.5" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 113.000000)">
+                        <rect x="0.3" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.1" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 150.000000)">
+                        <rect x="0.3" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.6" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 188.000000)">
+                        <rect x="0.3" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.2" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 225.000000)">
+                        <rect x="0.3" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.7" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 263.000000)">
+                        <rect x="0.3" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.3" width="24.9" height="24.9"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1067.000000, 390.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="157.9 37.7 128.3 0.3 107.3 26.9 104.6 26.9 104.6 13.6 106.2 13.6 106.2 10.4 97 10.4 97 13.6 98.7 13.6 98.7 26.9 59.6 26.9 59.6 13.6 61.3 13.6 61.3 10.4 52 10.4 52 13.6 53.7 13.6 53.7 26.9 51.4 26.9 30.4 0.3 0.9 37.7 0.8 37.7 0.8 119.8 47.3 119.8 60 119.8 98.7 119.8 116.2 119.8 157.9 119.8"></polygon>
+                <g transform="translate(8.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.7" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11.1" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.7" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M36,33.4 L36,23.1 C36,21.3 33.5,19.8 30.4,19.8 C27.3,19.8 24.8,21.3 24.8,23.1 L24.8,33.4 L36,33.4 Z" id="Shape"></path>
+                <g transform="translate(106.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.6" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.6" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M133.9,33.4 L133.9,23.1 C133.9,21.3 131.4,19.8 128.3,19.8 C125.2,19.8 122.7,21.3 122.7,23.1 L122.7,33.4 L133.9,33.4 Z" id="Shape"></path>
+                <path d="M89.6,72.7 L89.6,52.7 C89.6,49.2 85.2,46.3 79.7,46.3 C74.2,46.3 69.8,49.2 69.8,52.7 L69.8,72.7 L89.6,72.7 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="69.5" y="83" width="19.9" height="36.8"></rect>
+            </g>
+            <g id="Group" transform="translate(243.000000, 296.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <path d="M98.5,37.8 C97.8,16.9 80.7,0.1 59.5,0.1 C38.3,0.1 21.2,16.9 20.5,37.8 L0.8,37.8 L0.8,213.8 L118.1,213.8 L118.1,37.8 L98.5,37.8 Z" id="Shape"></path>
+                <g transform="translate(9.000000, 44.000000)" id="Rectangle-path">
+                    <rect x="0.9" y="0" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="19" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="38.6" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="58.2" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="77.9" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="96.8" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="116.5" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="135.4" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="155" width="99.3" height="8.5"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="buildings-fg-night" transform="translate(28270.000000, 615.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(859.000000, 0.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="95.6" height="489.9"></rect>
+                <g transform="translate(42.000000, 37.000000)" id="Rectangle-path">
+                    <rect x="0.1" y="0.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="19.8" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="39.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="59" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="78.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="98.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="117.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="137.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="156.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="176.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="196" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="215.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="235.1" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="254.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="274.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="293.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="313.4" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="333" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="352.6" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="372.2" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="391.7" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="411.3" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="430.9" width="42.2" height="8.3"></rect>
+                    <rect x="0.1" y="450.4" width="42.2" height="8.3"></rect>
+                </g>
+                <rect id="Rectangle-path" x="0.3" y="21.5" width="6" height="490"></rect>
+                <rect id="Rectangle-path" x="0.3" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="14" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="27.6" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="41.3" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="55" y="0.9" width="13.7" height="20.6"></rect>
+                <rect id="Rectangle-path" x="68.6" y="10.2" width="13.7" height="11.3"></rect>
+                <rect id="Rectangle-path" x="82.3" y="0.9" width="13.7" height="20.6"></rect>
+            </g>
+            <g id="Group" transform="translate(0.000000, 38.000000)">
+                <polygon id="Shape" stroke="#44E2C9" stroke-width="3" points="23.4 75 23.4 43.2 76.8 0.8 130.2 43.2 130.2 43.2 130.2 75 153.1 75 153.1 472.1 0.5 472.1 0.5 75"></polygon>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="99.2" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="131.6" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="164" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="196.4" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="228.8" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="261.3" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="293.7" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="326.1" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="358.5" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="13.5" y="390.9" width="128.9" height="15.1"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="61.7" y="422.4" width="30.3" height="49.7"></rect>
+                <g transform="translate(15.000000, 422.000000)" id="Rectangle-path" stroke="#44E2C9" stroke-width="3">
+                    <rect x="92.8" y="0.4" width="30.3" height="49.7"></rect>
+                    <rect x="0.6" y="0.4" width="30.3" height="49.7"></rect>
+                </g>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="105.9" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="80" y="44.8" width="15.1" height="28.8"></rect>
+                <rect id="Rectangle-path" stroke="#44E2C9" stroke-width="3" x="32.8" y="44.8" width="15.1" height="28.8"></rect>
+                <g id="Rectangle-path">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                    <use stroke="#44E2C9" stroke-width="3" xlink:href="#path-11"></use>
+                </g>
+            </g>
+            <g id="Group" transform="translate(565.000000, 86.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="129.1 61 129.1 30.8 129.1 30.8 76.7 0.5 24.2 30.8 24.2 30.8 24.2 61 0.3 61 0.3 424.1 153 424.1 153 61"></polygon>
+                <g transform="translate(15.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 136.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.9" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.9" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 298.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.1" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.1" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 190.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.2" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.2" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 243.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+                <g transform="translate(15.000000, 352.000000)" id="Rectangle-path">
+                    <rect x="0.2" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="103.9" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="35" y="0.6" width="19.2" height="39.5"></rect>
+                    <rect x="69.7" y="0.6" width="19.2" height="39.5"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(351.000000, 164.000000)" stroke="#44E2C9" stroke-width="4">
+                <path d="M77.6,258.3 L77.6,258 L78.3,200.2 C78.7,196.8 81.2,194.8 85.8,194.3 C85.8,192.7 85.8,191.2 85.8,189.6 C83,189.6 80.2,189.6 77.4,189.6 L77.9,139.6 C78.4,136.8 80.7,135.3 84.6,135 C84.6,133.5 84.6,132 84.6,130.5 C82.5,130.5 80.3,130.5 78.2,130.5 L78.2,128.9 L78.2,128.7 L78.2,120.7 C77.6,120.7 67,120.4 63.7,120.4 C62,100.5 60.3,80.6 58.7,60.6 C57.8,60.6 57,60.6 56.1,60.6 C55.6,62.5 55.1,64.4 54.6,66.3 C51.1,66.4 49.2,66.4 45.8,66.4 L45.3,66.4 C44.7,49.7 45.3,37.6 44.9,18.2 L68.9,18.4 C66.6,16.8 64.3,15.1 62,13.5 C64.7,11.7 67.3,10 70,8.2 C64.2,8.1 55.8,8.1 44.6,8.2 C44.6,7.3 44.5,6.4 44.5,5.5 L44.5,5.2 C44.2,-0.2 44.2,-0.8 43.8,5.3 C42.4,27 43.1,45.9 42.7,66.4 C39.6,66.4 36.5,66.4 33.3,66.3 C32.8,64.4 32.3,62.5 31.8,60.6 C30.9,60.6 30.1,60.6 29.2,60.6 C27.5,80.5 25.8,100.4 24.2,120.4 C20.9,120.4 10.3,120.7 9.7,120.7 L9.7,128.7 L9.7,128.9 L9.7,130.5 C7.6,130.5 5.4,130.5 3.3,130.5 C3.3,132 3.3,133.5 3.3,135 C7.2,135.3 9.4,136.8 10,139.6 L10.5,189.6 C7.7,189.6 4.9,189.6 2.1,189.6 C2.1,191.2 2.1,192.7 2.1,194.3 C6.6,194.9 9.1,196.8 9.6,200.2 L10.3,258 L10.3,258.3 C7,258.3 3.8,258.3 0.5,258.3 C0.5,260.7 0.5,263.1 0.5,265.5 C4.3,266.2 6,268.5 5.8,272.5 L5.9,346.3 L44.4,346.3 L82,346.3 L82.1,272.5 C81.9,268.5 83.6,266.2 87.4,265.5 C87.4,263.1 87.4,260.7 87.4,258.3 C84.1,258.3 80.8,258.3 77.6,258.3 Z" id="Shape"></path>
+                <path d="M60.9,162.9 C60.9,153.6 53.5,146.1 44.2,146 C44.1,146 44,146 43.9,146 C34.5,146 26.9,153.6 26.9,163 C26.9,172.4 34.5,179.9 43.9,179.9 C44,179.9 44.1,179.9 44.2,179.9 C53.5,179.7 60.9,172.1 60.9,162.9 Z M54.6,162.4 C53.7,163.7 53.1,164.4 52.4,165.6 C52.4,165.1 52.3,164.4 52.4,163.9 C49.5,164 42.6,164.1 41.9,164.1 C41.9,163.4 41.8,162.7 41.8,162 C41.8,159.7 41.8,152.2 41.8,151.3 C41.3,151.4 40.9,151.2 40.5,151.3 C42.1,149.6 42.1,149.5 43.5,148 C44.3,149.2 44.8,149.8 45.9,151.4 C45.4,151.3 45.1,151.4 44.4,151.4 C44.6,155.5 44.6,157.9 44.8,161.8 C47.4,161.9 49.1,161.8 51.9,161.9 C51.8,161.4 52.1,160.2 52,159.8 C53,160.7 53.4,161.1 54.6,162.4 Z" id="Shape"></path>
+                <path d="M55.4,327.4 L55.4,297.1 C55.4,289.8 50.3,284 43.9,284 C37.6,284 32.4,289.9 32.4,297.1 L32.4,327.4 L55.4,327.4 Z" id="Shape"></path>
+                <path d="M55.4,247.8 L55.4,217.5 C55.4,210.2 50.3,204.4 43.9,204.4 C37.6,204.4 32.4,210.3 32.4,217.5 L32.4,247.8 L55.4,247.8 Z" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(154.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.9 27.8 125.9 14.2 109.5 14.2 109.5 0.7 30.8 0.7 30.8 14.2 14.4 14.2 14.4 27.8 0.6 27.8 0.6 331.4 139.8 331.4 139.8 27.8"></polygon>
+                <rect id="Rectangle-path" x="37.1" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.7" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.4" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="115" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="37.1" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.7" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.4" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="115" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(1465.000000, 179.000000)" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="125.7 27.8 125.7 14.2 109.3 14.2 109.3 0.7 30.6 0.7 30.6 14.2 14.2 14.2 14.2 27.8 0.3 27.8 0.3 331.4 139.5 331.4 139.5 27.8"></polygon>
+                <rect id="Rectangle-path" x="36.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="82.9" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="38.3" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="127.5" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="10.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="63.5" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="176.1" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="88.2" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="114.8" y="220.7" width="14.8" height="28.6"></rect>
+                <rect id="Rectangle-path" x="36.8" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="10.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="63.5" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="88.2" y="257.9" width="14.8" height="73.2"></rect>
+                <rect id="Rectangle-path" x="114.8" y="257.9" width="14.8" height="73.2"></rect>
+            </g>
+            <g id="Group" transform="translate(710.000000, 320.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="242.2 14.2 242.2 0.6 210.6 0.6 59 0.6 27.4 0.6 27.4 14.2 0.7 14.2 0.7 190.5 268.9 190.5 268.9 14.2"></polygon>
+                <g transform="translate(20.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="42.1" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.9" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="83.3" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(20.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="42.1" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="42.1" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.9" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="83.3" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 83.000000)" id="Rectangle-path">
+                    <rect x="41.4" y="0.6" width="23" height="28.6"></rect>
+                    <g>
+                        <rect x="0.2" y="0.6" width="23" height="28.6"></rect>
+                        <rect x="82.6" y="0.6" width="23" height="28.6"></rect>
+                    </g>
+                </g>
+                <g transform="translate(144.000000, 39.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="41.4" y="0" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                    <g transform="translate(0.000000, 89.000000)">
+                        <rect x="41.4" y="0.3" width="23" height="28.6"></rect>
+                        <g>
+                            <rect x="0.2" y="0.3" width="23" height="28.6"></rect>
+                            <rect x="82.6" y="0.3" width="23" height="28.6"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1249.000000, 255.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="12.4" y="67.5" width="203.4" height="187.4"></rect>
+                <polygon id="Shape" points="206.5 43.1 227.8 87.3 0.4 87.3 21.6 43.1"></polygon>
+                <path d="M127,14.8 L134.2,14.8 C135.4,6.5 144.1,0.2 154.6,0.2 C165.1,0.2 173.8,6.6 175,14.8 L182.2,14.8 L182.2,22.9 L175.1,22.9 L175.1,55.2 L134,55.2 L134,22.9 L126.9,22.9 L127,14.8 Z" id="Shape"></path>
+                <path d="M32.3,14.8 L39.5,14.8 C40.7,6.5 49.4,0.2 59.9,0.2 C70.4,0.2 79.1,6.6 80.3,14.8 L87.5,14.8 L87.5,22.9 L80.4,22.9 L80.4,55.2 L39.2,55.2 L39.2,22.9 L32.1,22.9 L32.3,14.8 Z" id="Shape"></path>
+                <g transform="translate(30.000000, 6.000000)">
+                    <g transform="translate(0.000000, 83.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.3" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.3" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 138.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0.8" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0.8" width="29.8" height="38.6"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 191.000000)" id="Rectangle-path">
+                        <rect x="140.1" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="92.7" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="47" y="0" width="29.8" height="38.6"></rect>
+                        <rect x="0.5" y="0" width="29.8" height="38.6"></rect>
+                    </g>
+                    <path d="M111.6,11.3 C112.1,5.4 117.7,0.8 124.6,0.8 C131.5,0.8 137.1,5.4 137.6,11.3 L111.6,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="112.9" y="26.3" width="23.4" height="13"></rect>
+                    <path d="M17,11.3 C17.5,5.4 23.1,0.8 30,0.8 C36.9,0.8 42.5,5.4 43,11.3 L17,11.3 Z" id="Shape"></path>
+                    <rect id="Rectangle-path" x="18.3" y="26.3" width="23.4" height="13"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1632.000000, 59.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.6" y="0.1" width="319.7" height="451.4"></rect>
+                <rect id="Rectangle-path" x="16.8" y="53.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="80.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="107.4" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="135" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="161.6" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="189.3" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="215.9" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="243.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="271.2" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="298.8" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="325.5" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="353.1" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="379.7" width="287.2" height="12"></rect>
+                <rect id="Rectangle-path" x="16.8" y="407.4" width="287.2" height="12"></rect>
+            </g>
+            <g id="Group" transform="translate(978.000000, 118.000000)" stroke="#44E2C9" stroke-width="4">
+                <rect id="Rectangle-path" x="0.7" y="66.4" width="217.9" height="325.4"></rect>
+                <path d="M110.1,0.9 C50.1,0.9 1.6,30.7 1.6,67.4 L218.7,67.4 C218.6,30.7 170,0.9 110.1,0.9 Z" id="Shape"></path>
+                <g transform="translate(11.000000, 6.000000)" id="Shape">
+                    <path d="M156.5,43.6 L196.7,43.6 C192.1,34.6 183.8,26.3 172.3,19.2 C164,14.1 154.6,10.1 144.3,7 C148.2,17.2 152.6,29.7 156.5,43.6 Z"></path>
+                    <path d="M53.1,7.1 C42.8,10.1 33.4,14.2 25.1,19.3 C13.6,26.3 5.3,34.7 0.6,43.7 L40.8,43.7 C44.7,29.7 49.1,17.2 53.1,7.1 Z"></path>
+                    <path d="M47.7,43.6 L149.5,43.6 C145.2,28.5 140.3,15.1 136.2,5 C124.4,2.2 111.7,0.8 98.6,0.8 C85.5,0.8 72.8,2.2 61,5 C56.9,15.2 52,28.5 47.7,43.6 Z"></path>
+                </g>
+                <g transform="translate(9.000000, 85.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.3" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.4" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.4" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 38.000000)">
+                        <rect x="0.3" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 75.000000)">
+                        <rect x="0.3" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.5" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.5" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 113.000000)">
+                        <rect x="0.3" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.1" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.1" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 150.000000)">
+                        <rect x="0.3" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.6" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.6" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 188.000000)">
+                        <rect x="0.3" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.2" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.2" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 225.000000)">
+                        <rect x="0.3" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.7" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.7" width="24.9" height="24.9"></rect>
+                    </g>
+                    <g transform="translate(0.000000, 263.000000)">
+                        <rect x="0.3" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="35.5" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="70.6" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="105.8" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="140.9" y="0.3" width="24.9" height="24.9"></rect>
+                        <rect x="176.1" y="0.3" width="24.9" height="24.9"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Group" transform="translate(1067.000000, 390.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <polygon id="Shape" points="157.9 37.7 128.3 0.3 107.3 26.9 104.6 26.9 104.6 13.6 106.2 13.6 106.2 10.4 97 10.4 97 13.6 98.7 13.6 98.7 26.9 59.6 26.9 59.6 13.6 61.3 13.6 61.3 10.4 52 10.4 52 13.6 53.7 13.6 53.7 26.9 51.4 26.9 30.4 0.3 0.9 37.7 0.8 37.7 0.8 119.8 47.3 119.8 60 119.8 98.7 119.8 116.2 119.8 157.9 119.8"></polygon>
+                <g transform="translate(8.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.7" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11.1" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.7" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M36,33.4 L36,23.1 C36,21.3 33.5,19.8 30.4,19.8 C27.3,19.8 24.8,21.3 24.8,23.1 L24.8,33.4 L36,33.4 Z" id="Shape"></path>
+                <g transform="translate(106.000000, 42.000000)" id="Rectangle-path">
+                    <g>
+                        <rect x="0.6" y="0.8" width="8" height="30.1"></rect>
+                        <rect x="11.6" y="0.8" width="8" height="30.1"></rect>
+                    </g>
+                    <g>
+                        <g transform="translate(25.000000, 0.000000)">
+                            <rect x="0.1" y="0.8" width="8" height="30.1"></rect>
+                            <rect x="11" y="0.8" width="8" height="30.1"></rect>
+                        </g>
+                        <rect x="0.6" y="43.3" width="43.5" height="27.9"></rect>
+                    </g>
+                </g>
+                <path d="M133.9,33.4 L133.9,23.1 C133.9,21.3 131.4,19.8 128.3,19.8 C125.2,19.8 122.7,21.3 122.7,23.1 L122.7,33.4 L133.9,33.4 Z" id="Shape"></path>
+                <path d="M89.6,72.7 L89.6,52.7 C89.6,49.2 85.2,46.3 79.7,46.3 C74.2,46.3 69.8,49.2 69.8,52.7 L69.8,72.7 L89.6,72.7 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="69.5" y="83" width="19.9" height="36.8"></rect>
+            </g>
+            <g id="Group" transform="translate(243.000000, 296.000000)" fill="#FFFFFF" stroke="#44E2C9" stroke-width="4">
+                <path d="M98.5,37.8 C97.8,16.9 80.7,0.1 59.5,0.1 C38.3,0.1 21.2,16.9 20.5,37.8 L0.8,37.8 L0.8,213.8 L118.1,213.8 L118.1,37.8 L98.5,37.8 Z" id="Shape"></path>
+                <g transform="translate(9.000000, 44.000000)" id="Rectangle-path">
+                    <rect x="0.9" y="0" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="19" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="38.6" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="58.2" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="77.9" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="96.8" width="99.3" height="8.6"></rect>
+                    <rect x="0.9" y="116.5" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="135.4" width="99.3" height="8.5"></rect>
+                    <rect x="0.9" y="155" width="99.3" height="8.5"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="Group-29" transform="translate(25980.000000, 1112.000000)" fill-rule="nonzero">
+            <g id="Group-23">
+                <g id="Group-21" fill="url(#linearGradient-4)">
+                    <g id="Group-20" transform="translate(0.000000, 4.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-20" transform="translate(916.000000, 0.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
+                    <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
+                    <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
+                    <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
+                    <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
+                    <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
+                    <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
+                    <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
+                </g>
+            </g>
+            <g id="Group-23" transform="translate(1822.000000, 0.000000)">
+                <g id="Group-21" fill="url(#linearGradient-4)">
+                    <g id="Group-20" transform="translate(0.000000, 4.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-20" transform="translate(916.000000, 0.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
+                    <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
+                    <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
+                    <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
+                    <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
+                    <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
+                    <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
+                    <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
+                </g>
+            </g>
+        </g>
+        <g id="Group-29" transform="translate(29625.000000, 1112.000000)" fill-rule="nonzero">
+            <g id="Group-23">
+                <g id="Group-21" fill="url(#linearGradient-4)">
+                    <g id="Group-20" transform="translate(0.000000, 4.000000)">
+                        <g id="Group-19" transform="translate(0.000000, 4.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                            <g id="Group-18" transform="translate(230.000000, 0.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                                <polygon id="Rectangle-14" points="252.352257 5.33765449 253.975232 3.8614086 169.805967 162.362915 168.559712 163.4965"></polygon>
+                                <polygon id="Rectangle-14" points="281.352257 6.33765449 282.975232 4.8614086 198.805967 163.362915 197.559712 164.4965"></polygon>
+                            </g>
+                        </g>
+                        <g id="Group-19" transform="translate(455.000000, 0.000000)">
+                            <g id="Group-18" transform="translate(0.000000, 4.000000)">
+                                <polygon id="Rectangle-14" transform="translate(43.807441, 80.648911) rotate(28.000000) translate(-43.807441, -80.648911) " points="43.3074406 -7.81048938 44.0473865 -9.87587751 44.1422868 169.587722 43.5740947 171.173699"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(71.940288, 81.163380) rotate(28.000000) translate(-71.940288, -81.163380) " points="71.4402877 -7.29602048 72.1802336 -9.3614086 72.2751339 170.102191 71.7069418 171.688168"></polygon>
+                                <polygon id="Rectangle-14" points="141.468274 3.68503808 143.091249 2.20879219 58.9219842 160.710299 57.6757293 161.843883"></polygon>
+                                <polygon id="Rectangle-14" points="170.468274 4.68503808 172.091249 3.20879219 87.9219842 161.710299 86.6757293 162.843883"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(154.500000, 82.024788) rotate(28.000000) translate(-154.500000, -82.024788) " points="154 -6.43461187 154.739946 -8.5 154.834846 170.9636 154.266654 172.549577"></polygon>
+                                <polygon id="Rectangle-14" transform="translate(182.500000, 83.024788) rotate(28.000000) translate(-182.500000, -83.024788) " points="182 -5.43461187 182.739946 -7.5 182.834846 171.9636 182.266654 173.549577"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-22" transform="translate(43.000000, 31.000000)" stroke="#466964" stroke-linecap="square" stroke-width="2">
+                    <path d="M0.5,1.5 L1883.5,1.5" id="Line-3"></path>
+                    <path d="M0.5,19.25 L1883.5,19.25" id="Line-3"></path>
+                    <path d="M0.5,38.25 L1883.5,38.25" id="Line-3"></path>
+                    <path d="M0.5,56.25 L1883.5,56.25" id="Line-3"></path>
+                    <path d="M0.5,73.25 L1883.5,73.25" id="Line-3"></path>
+                    <path d="M0.5,92.25 L1883.5,92.25" id="Line-3"></path>
+                    <path d="M0.5,110.25 L1883.5,110.25" id="Line-3"></path>
                 </g>
             </g>
         </g>

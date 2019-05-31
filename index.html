@@ -133,7 +133,7 @@
             updatedChart1 = false;
             $(window).scroll(function () {
                 let scroll = $(this).scrollTop() 
-                if ((scroll > 10000 && scroll < 15000) || (scroll > 20200 && scroll < 30000)) {
+                if ((scroll > 10000 && scroll < 15000) || (scroll > 20200 && scroll < 34739)) {
                     $("#background").addClass('night')
                 }else{
                     $("#background").removeClass('night')
@@ -175,7 +175,7 @@
                 </div>
             <div class = "lax city"
                 style = "background: url('img/buildings.svg') no-repeat; bottom:-600px;"
-                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 17400 -15700, 20200 -15700, 29035 -24535"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 17400 -15700, 20200 -15700, 34739 -30239"
                 data-lax-translate-y="0 0, 1000 -600"
                 data-lax-blur="0 0, 4900 0, 5000 10, 5900 10, 6000 0">
             </div>
@@ -231,8 +231,22 @@
                 </div>
 
                 <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 20400 0, 20500 1, 20900 1, 21200 0">A fully automated road will promote the efficiency of the whole town.</h1>
-                <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 21200 0, 21300 1, 21700 1, 22000 0">Human drivers often drive inefficiently by doing things like harshly accelerating or braking and idling.</h1>
-                <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 22000 0, 22200 1, 22700 1, 23000 0">A study finds that self-driving cars can be up to 15% more efficient just through better driving practices. </h1>
+                <h1 class = "lax headline" style = "color:white; width:80vw;" data-lax-opacity = "0 0, 21200 0, 21300 1, 21700 1, 22000 0">Human drivers often drive inefficiently by doing things like harshly accelerating or braking and idling.</h1>
+                <h1 class = "lax headline" style = "width:80vw;color:white;" data-lax-opacity = "0 0, 22000 0, 22200 1, 22700 1, 23000 0">A study finds that self-driving cars can be up to 15% more efficient just through better driving practices. </h1>
+
+
+                <div class = "lax headline" style = "padding:20px;background-color:#454545; width:80vw;" data-lax-opacity = "0 0, 26200 0, 26300 1, 26700 1, 27200 0">
+                    <h1 style="color:white;">In the future, with completely autonomous roads, we can expect fleets and networks of these vehicles.</h1>
+                </div>
+                <div class = "lax headline" style = "padding:20px;background-color:#454545; color:white; width:80vw;" data-lax-opacity = "0 0, 27200 0, 27400 1, 27800 1, 28000 0">
+                    <h1>These networks can be managed on a macro scale, beyond just the town of Montgomery.</h1>
+                </div>
+                <div class = "lax headline" style = "padding:20px;background-color:#454545; width:80vw;color:white;" data-lax-opacity = "0 0, 28000 0, 28200 1, 28700 1, 29000 0">
+                    <h1>This opens up opportunities for even more optimization, including more efficient traffic flow, platooning of vehicles, and even new services like ride-sharing.</h1>
+                </div>
+                <div class = "lax headline" style = "padding:20px;background-color:#454545; width:80vw;color:white;" data-lax-opacity = "0 0, 29000 0, 29200 1, 29700 1, 32000 0">
+                    <h1>With your commitment and participation, we can further explore the possibilities in which we can interact with autonomous roads, and the ways in which this new technology can interact with us.</h1>
+                </div>
             </div>
             <div id="faqmodals" style = "width:100vw; height:100vh; position: absolute;" class = "lax center">
                 <div id = "modal1" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
@@ -260,9 +274,9 @@
                     <h2> Various self driving vehicles have been submitted for approval and are currently in the 6 month testing stage. </h2>
                 </div>
             </div>
-            <div style="width:1191px; height:100vh; right:-1191px; position: absolute;" class = "lax"
+            <div style="width:1vw; height:100vh; right:-1vw; position: absolute;" class = "lax"
                 data-lax-opacity = "23100 0, 23200 1"
-                data-lax-translate-x="24172 0, 26570 -2661">
+                data-lax-translate-x="24072 0, 26570 (-2*vw)">
                 <div onclick = "openModal(1)" class = "lax lot" style="background:url('img/liability.svg') no-repeat; bottom:0px;"></div>
                 <div onclick = "openModal(2)"class = "lax lot" style="background:url('img/privacy.svg') no-repeat; bottom:0px; left:297px"></div>
                 <div onclick = "openModal(3)"class = "lax lot" style="background:url('img/manual.svg') no-repeat; bottom:-10px; left:594px"></div>
@@ -270,7 +284,7 @@
             </div>
             <div class="lax car" style="transform: scale(1.5); background: url('img/automobile.svg') no-repeat; bottom:-800px"
                 data-lax-translate-x= "0 (0.1*vw), (100*vh) vw"
-                data-lax-translate-y="0 0, 1000 -550, 23200 -550, 23300 -520"
+                data-lax-translate-y="0 0, 1000 -550, 23200 -550, 23300 -520, 26200 -520, 26300 -550"
                 data-lax-opacity="0 1, 17299 1, 17400 0, 20100 0, 20200 1"></div>
 
             <div class = "lax car vehicle" style="transform: scale(1.25); background:url('img/suv.svg') no-repeat; bottom:20px; left:0vw;"
@@ -287,6 +301,10 @@
             <div id = "green" class = "lax city" style = "background: url('img/streetlight-green.svg') no-repeat; bottom:0;"
                 data-lax-opacity="0 0, 9149 0, 9150 1"
                 data-lax-translate-x="0 0, 1000 0, 5000 -5000, 6300 -5000, 8800 -7500, 9200 -7500, 13000 -12000"> </div>
+            <div id = "closing" style = "width: 100vw; height: 100vh; bottom:-100vh; background-color:#44E2C9; position: absolute; visibility: visible;" class = "lax center"
+                data-lax-translate-y="0 0, 32000 0, 32500 (-1*vh)">
+                <img src ="img/closing.svg" width="40%">
+            </div>
             <div id = "bulletin" style = "width:100vw; height:100vh; position: absolute; visibility: visible;" class = "lax"
                 data-lax-opacity="0 0, 17799 0, 17850 1, 20100 1, 20200 0">
                 <h1 style = "position: absolute; right:-5vw; top:5vh; color:white; font-size:80px" class="lax"
