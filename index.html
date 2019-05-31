@@ -146,9 +146,13 @@
                     $('#red').removeClass('visible')
                     $('#green').removeClass('visible')
                     $('#green').addClass('hidden')
+                    $('#info').addClass('hidden')
+                    $('#amb').addClass('hidden')
                 }else{
                    $('#red').addClass('visible')
-                    $('#green').addClass('visible') 
+                    $('#green').addClass('visible')
+                    $('#info').removeClass('hidden')
+                    $('#amb').removeClass('hidden') 
                 }
                 if(scroll > 20200){
                     $('#bulletin').addClass('hidden')
@@ -194,20 +198,10 @@
                 <h1 style="position: relative; color:white" class = "lax"
                 data-lax-opacity="0 1, 40 0"> SCROLL! </h1>
             </div>
-            <div style = "position:absolute;  width:100vw; height:100vh" class = "center">
-                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign1.svg" class="lax"
-                data-lax-rotate="0 90, 2000 90, 2100 0, 2500 0, 2700 -90"
-                data-lax-translate-y="0 0, 2000 0, 2100 -760, 2500 -760, 2700 0">
-                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign2.svg" class="lax"
-                data-lax-rotate="0 90, 2700 90, 2900 0, 3400 0, 3700 -90"
-                data-lax-translate-y="0 0, 2700 0, 2900 -760, 3400 -760 3700 0">
-            </div>
             <div class = "lax city" style = "background: url('img/accident.svg') no-repeat; bottom:0;"
                 data-lax-opacity="0 1, 5900 1, 6300 0"
                 data-lax-translate-x="0 0, 1000 0, 5000 -5000, 7000, -5000, 8200 -6200"></div>
-            <div class = "lax city" style = "background: url('img/ambulance.svg') no-repeat; bottom:0;"
-                data-lax-opacity="0 1, 5900 1, 6300 0"
-                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 7000, -5000, 8200 -6200"></div>
+            
             <div style = "width:100vw; height: 10vh; opacity:0; position:absolute; background:#c69e69" class="lax"
                 data-lax-opacity = "0 0, 17299 0, 17300 1, 17500 1, 20100 1, 20200 0"
                 data-lax-scale-y = "17299 1, 17400 10">
@@ -259,25 +253,25 @@
                 </div>
             </div>
             <div id="faqmodals" style = "width:100vw; height:100vh; position: absolute;" class = "lax center">
-                <div id = "modal1" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                <div id = "modal1" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute; border-radius:30px;">
                     <div onclick = "closeModal(1)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
                     <h1>If a self-driving car is involved in an accident, who is liable? </h1>
                     <h2>In cases where the software is found to be at fault, manufacturers have agreed to assume full legal liability.
                     If the reason for the crash was misuse of the software by a human operator, the operator of the vehicle is still liable.
                     </h2>
                 </div>
-                <div id = "modal2" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                <div id = "modal2" style= "border-radius:30px;padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
                     <div onclick = "closeModal(2)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
                     <h1>Fully automated vehicles share information when communicating with other vehicles. Is my privacy protected?</h1>
                     <h2>All data shared with third parties is de-identified, meaning that no information that could be used to link to a specific vehicle or user is shared.
                     </h2>
                 </div>
-                <div id = "modal3" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                <div id = "modal3" style= "border-radius:30px;padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
                     <div onclick = "closeModal(3)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
                     <h1>How can I trust the AI to not become unstable and take a mind of its own?</h1>
                     <h2>The AI of the cars has been meticulously researched and developed to be as robust as possible. In addition, we have a team of cybersecurity experts searching for anomalies in data.</h2>
                 </div>
-                <div id = "modal4" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
+                <div id = "modal4" style= "border-radius:30px;padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
                     <div onclick = "closeModal(4)" style="background:url('img/error.svg') no-repeat; height:25px; top: 12.5px; width:25px; position: absolute; right:25px;"></div>
                     <h1>When will I be able to use a self driving car in Montgomery?</h1>
                     <h2> The progress of these tests will be publically available, and you will be notified when a model becomes approved for public use. </h2>
@@ -295,7 +289,17 @@
                 data-lax-translate-x= "0 (0.1*vw), (100*vh) vw"
                 data-lax-translate-y="0 0, 1000 -550, 23200 -550, 23300 -520, 26200 -520, 26300 -550"
                 data-lax-opacity="0 1, 17299 1, 17400 0, 20100 0, 20200 1"></div>
-
+            <div id="info"style = "position:absolute;  width:100vw; height:100vh" class = "center">
+                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign1.svg" class="lax"
+                data-lax-rotate="0 90, 2000 90, 2100 0, 2500 0, 2700 -90"
+                data-lax-translate-y="0 0, 2000 0, 2100 -760, 2500 -760, 2700 0">
+                <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign2.svg" class="lax"
+                data-lax-rotate="0 90, 2700 90, 2900 0, 3400 0, 3700 -90"
+                data-lax-translate-y="0 0, 2700 0, 2900 -760, 3400 -760 3700 0">
+            </div>
+            <div id="amb"class = "lax city" style = "background: url('img/ambulance.svg') no-repeat; bottom:0;"
+                data-lax-opacity="0 1, 5900 1, 6300 0"
+                data-lax-translate-x="0 0, 1000 0, 5000 -5000, 7000, -5000, 8200 -6200"></div>
             <div class = "lax car vehicle" style="transform: scale(1.25); background:url('img/suv.svg') no-repeat; bottom:20px; left:0vw;"
                 data-lax-opacity = "0 0, 20100 0, 20200 1, 23200 0"
                 data-lax-translate-x= "0 0, (100*vh) vw"> </div>
