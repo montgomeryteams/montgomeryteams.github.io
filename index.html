@@ -99,7 +99,9 @@
 
         
         window.requestAnimationFrame(update)
-
+        window.addEventListener("resize", function() {
+            lax.updateElements()
+        });
         var ctx = document.getElementById('pieChartDisabled').getContext('2d');
         var ctx1 = document.getElementById('pieChartCrashes').getContext('2d');
         var chart = new Chart(ctx, {
@@ -231,7 +233,7 @@
                 <h1 class = "lax headline" style = "color:white;"data-lax-opacity = "0 0, 6200 0, 6300 1, 6650 1, 6800 0"> vehicles will not speed... </h1>
                 <h1 class = "lax headline" style = "color:white;"data-lax-opacity = "0 0, 7600 0, 7700 1, 9200 1, 9300 0"> vehicles will not pass red lights... </h1>
                 <h1 class = "lax headline" style = "color:white;" data-lax-opacity = "0 0, 9200 0, 9400 1, 10000 1, 12000 0"> and vehicles will not become impaired or fatigued.</h1>
-                <div class = "lax headline" style = "background:#424242; width:60vw; left:-60vw;" data-lax-translate-x = "0 0, 12800 0, 13000 (0.70*vw), 15800 (0.90*vw), 16300 (1.2*vw)" data-lax-opacity = "0 0, 12800 0, 13000 1, 15800 1, 16300 0">
+                <div class = "lax headline" style = "background:#424242; width:60vw; left:-60vw;padding:20px" data-lax-translate-x = "0 0, 12800 0, 13000 (0.70*vw), 15800 (0.90*vw), 16300 (1.2*vw)" data-lax-opacity = "0 0, 12800 0, 13000 1, 15800 1, 16300 0">
                     <h1 style = "color:white;"> several months of human-supervised testing will train vehicles under various driving conditions before they hit the roads. </h1>
                 </div>
                 <div class = "lax headline" style = "background: #c69e69; width:100vw" data-lax-opacity = "0 0, 16500 0, 16700 1, 17300 1, 17700 1, 17800 0">
@@ -262,7 +264,6 @@
                     <h1>If a self-driving car is involved in an accident, who is liable? </h1>
                     <h2>In cases where the software is found to be at fault, manufacturers have agreed to assume full legal liability.
                     If the reason for the crash was misuse of the software by a human operator, the operator of the vehicle is still liable.
-                    If a third party was found to be at fault, that person is liable, not the manufacturer or the operator of the self-driving car.
                     </h2>
                 </div>
                 <div id = "modal2" style= "padding:25px;background:white;z-index:3;visibility: hidden; width:70vw; position: absolute;">
@@ -317,13 +318,15 @@
                 data-lax-opacity="0 0, 17799 0, 17850 1, 20100 1, 20200 0">
                 <h1 style = "position: absolute; right:-5vw; top:5vh; color:white; font-size:80px" class="lax"
                     data-lax-translate-x = "0 0, 17850 0, 18000 (-0.1*vw)"> EVERYONE </h1>
+                <h1 class = "lax" style = "color:white; font-size:20px;position: absolute; left:0px; width:45vw; text-align: center; bottom: 10px;"
+                    data-lax-opacity = "17850 0, 18000 1, 19700 1, 19850 0">Click the charts for more info!</h1>
                 <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:55px" class="lax"
                     data-lax-translate-x = "0 0, 17850 0, 18000 (-0.55*vw), 18500 (-0.55*vw), 18700 0"> Over 15% of Somerset County is aged 65 and older, and nearly 15,000 people under the age of 65 have a disability. </h2>
                 <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:45px" class="lax"
                     data-lax-translate-x = "0 0, 18750 0, 18950 (-0.55*vw), 19300 (-0.55*vw), 19400 0"> Involvement in fatal crashes, per mile traveled, begins increasing among drivers ages 70‒74 and are highest among drivers ages 85 and older. </h2>
                 <h2 style = "position: absolute; right:-50vw; top:20vh; text-align:right;width:50vw; color:white; font-size:40px" class="lax"
                     data-lax-translate-x = "0 0, 19400 0, 19500 (-0.55*vw), 19800 (-0.55*vw), 19850 0"> An estimated 71% of those with disabilities reduce their day to day travel, and 41% are reliant on others for rides. </h2>
-                <h2 style = "position: absolute; top: 30vh; opacity: 0;text-align:right;width:80vw; right:10vw; text-align: center; color:white; font-size:60px" class="lax"
+                <h2 style = "position: absolute; top: 30vh; opacity: 0;text-align:right;width:80vw; right:10vw; text-align: center; color:white; font-size:55px" class="lax"
                     data-lax-opacity = "0 0, 19849 0, 19900 1, 20100 1, 20200 0"> With self driving cars, disabled and elderly can stay mobile and independent without putting themselves and others at risk. </h2>
                 <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh;" class="lax center"
                     data-lax-translate-y="0 0, 17850 0, 18000 (-0.8*vh), 18600 (-0.8*vh), 18650 0">
