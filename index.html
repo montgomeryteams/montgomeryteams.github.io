@@ -53,6 +53,8 @@
                     break;
                 case 3:
                     modal = $('#modal3');
+                    $('#instcit').removeClass('hidden')
+                    $('#instcit').addClass('visible')
                     break;
                 case 4:
                     modal = $('#modal4');
@@ -75,6 +77,8 @@
                     break;
                 case 3:
                     modal = $('#modal3');
+                    $('#instcit').removeClass('visible')
+                    $('#instcit').addClass('hidden')
                     break;
                 case 4:
                     modal = $('#modal4');
@@ -190,7 +194,6 @@
                 data-lax-translate-y="0 0, 1000 -600"
                 data-lax-blur="0 0, 4900 0, 5000 10, 5900 10, 6000 0">
             </div>
-            
             <div style = "width:100vw; display: block !important;" class = "lax center"
                 data-lax-opacity="0 1, 1200 1, 1600 0"
                 data-lax-scale="0 0.8, 800 1">
@@ -277,7 +280,7 @@
                     <h2> The progress of these tests will be publically available, and you will be notified when a model becomes approved for public use. </h2>
                 </div>
             </div>
-            <div style="width:1vw; height:100vh; right:-1vw; position: absolute;" class = "lax"
+            <div style="z-index:5;width:1vw; height:100vh; right:-1vw; position: absolute;" class = "lax"
                 data-lax-opacity = "23100 0, 23200 1"
                 data-lax-translate-x="24072 0, 26570 (-2*vw)">
                 <div onclick = "openModal(1)" class = "lax lot" style="background:url('img/liability.svg') no-repeat; bottom:0px;"></div>
@@ -296,6 +299,25 @@
                 <img style ="bottom:-900px; position:absolute;"width="40%" src="img/info-sign2.svg" class="lax"
                 data-lax-rotate="0 90, 2700 90, 2900 0, 3400 0, 3700 -90"
                 data-lax-translate-y="0 0, 2700 0, 2900 -760, 3400 -760 3700 0">
+            </div>
+            <div id="citations" style = "z-index:1;width:100vw; position: absolute; height: 100vh;" class = "lax"> 
+                <div style="width:50vw;position: absolute; bottom:0; right:10px; background:#424242; padding:10px;"class = "lax"
+                    data-lax-opacity="0 0, 2700 0, 2900 1, 3400 1, 3700 0">
+                    <h2 style=" text-align:right;font-size:13px;  font-weight: 400; color:white;" >“SAE International Releases Updated Visual Chart for Its ‘Levels of Driving Automation’ Standard for Self-Driving Vehicles.” SAE International ®, 12 Dec. 2018, www.sae.org/news/press-room/2018/12/sae-international-releases-updated-visual-chart-for-its-“levels-of-driving-automation”-standard-for-self-driving-vehicles.</h2> 
+                </div>
+                <div style="width:50vw;position: absolute; bottom:0; padding:10px; right:10px; background:#424242"class = "lax"
+                   data-lax-opacity = "0 0, 5000 0, 5300 1, 5500 1, 5600 0">
+                <h2 style=" text-align:right;font-size:13px;  font-weight: 400; color:white;" >Singh, S. (2015, February). Critical reasons for crashes investigated in the National Motor Vehicle Crash Causation Survey. (Traffic Safety Facts Crash Stats. Report No. DOT HS 812 115). Washington, DC: National Highway Traffic Safety Administration</h2>
+                </div>
+                <div style="width:50vw;position: absolute; bottom:0; padding:10px; right:10px; background:#424242"class = "lax"
+                   data-lax-opacity = "0 0, 22000 0, 22200 1, 22700 1, 23000 0">
+                <h2 style="text-align:right;font-size:13px;  font-weight: 400; color:white;">Brown A., Gonder J., Repac B. (2014) An Analysis of Possible Energy Impacts of Automated Vehicles. In: Meyer G., Beiker S. (eds) Road Vehicle Automation. Lecture Notes in Mobility. Springer, Cham</h2>
+                </div>
+
+                 <div id="instcit" style="width:50vw;position: absolute; bottom:0; padding:10px; right:10px; background:#424242" class="hidden">
+                <h2 style="text-align:right;font-size:13px;  font-weight: 400; color:white;">Davis, Nicholas. “3.2 Assessing the Risk of Artificial Intelligence.” Global Risks Report 2017, 2017, reports.weforum.org/global-risks-2017/part-3-emerging-technologies/3-2-assessing-the-risk-of-artificial-intelligence/.</h2>
+                </div>
+                
             </div>
             <div id="amb"class = "lax city" style = "background: url('img/ambulance.svg') no-repeat; bottom:0;"
                 data-lax-opacity="0 1, 5900 1, 6300 0"
@@ -332,13 +354,19 @@
                     data-lax-translate-x = "0 0, 19400 0, 19500 (-0.55*vw), 19800 (-0.55*vw), 19850 0"> An estimated 71% of those with disabilities reduce their day to day travel, and 41% are reliant on others for rides. </h2>
                 <h2 style = "position: absolute; top: 30vh; opacity: 0;text-align:right;width:80vw; right:10vw; text-align: center; color:white; font-size:55px" class="lax"
                     data-lax-opacity = "0 0, 19849 0, 19900 1, 20100 1, 20200 0"> With self driving cars, disabled and elderly can stay mobile and independent without putting themselves and others at risk. </h2>
-                <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh;" class="lax center"
+                <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh; padding:20px; left:0px;" class="lax center"
                     data-lax-translate-y="0 0, 17850 0, 18000 (-0.8*vh), 18600 (-0.8*vh), 18650 0">
+                    <div>
                     <canvas id="pieChartDisabled"> </canvas>
+                    <h2 style="padding-top:10px;font-size:13px; text-align:left;font-weight: 400; color:white;">Source: “U.S. Census Bureau QuickFacts: Montgomery Township, Somerset County, New Jersey; Somerset County, New Jersey; New Jersey.”</h2>
+                    </div>
                 </div>
-                <div style="position: absolute; height:100vh;width:45vw; bottom:-80vh;" class="lax center"
+                <div style="position: absolute; height:100vh;width:45vw; padding:20px;bottom:-80vh;" class="lax center"
                     data-lax-translate-y="0 0, 18750 0, 18900 (-0.8*vh), 19700 (-0.8*vh), 19850 0">
+                    <div>
                     <canvas id="pieChartCrashes"> </canvas>
+                    <h2 style="padding-top:10px;font-size:13px; text-align:left;font-weight: 400; color:white;">Source: Insurance Institute for Highway Safety (IIHS). Fatality facts 2016, Older people. Arlington (VA): IIHS; November 2018. Available at: https://www.iihs.org/iihs/topics/t/older-drivers/fatalityfacts/older-people/2016External Accessed 27 May 2019.</h2>
+                    </div>
                 </div>
 
             </div>
