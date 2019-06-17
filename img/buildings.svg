@@ -2331,7 +2331,7 @@
                 </g>
             </g>
         </g>
-        <rect id="Rectangle-6" fill="#D8D8D8" fill-rule="nonzero" x="8885" y="1011" width="3246" height="117"></rect>
+        <rect id="Rectangle-6" fill="#D8D8D8" fill-rule="nonzero" x="8885" y="1011" width="3246" height="0"></rect>
         <g id="Group-7" transform="translate(12131.000000, -9.000000)">
             <rect id="Rectangle-3" fill="#FFCB95" fill-rule="nonzero" x="0" y="9" width="793" height="1131"></rect>
             <rect id="Rectangle-3" fill="#8B8B8B" fill-rule="nonzero" x="785" y="9" width="793" height="1127"></rect>

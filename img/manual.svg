@@ -31,10 +31,10 @@
             </g>
             <g id="Group-14" transform="translate(99.000000, 46.000000)">
                 <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="100" height="42"></rect>
-                <g id="MANUAL?" transform="translate(6.000000, 12.000000)" fill="#4647FF" font-family="ArialNarrow-Bold, Arial Narrow" font-size="16" font-weight="bold">
-                    <text id="INSTABILITY?">
-                        <tspan x="0" y="15">INSTABILITY</tspan>
-                        <tspan x="79.9375" y="15">?</tspan>
+                <g id="MANUAL?" transform="translate(6.000000, 12.000000)" fill="#4647FF" font-family="ArialNarrow-Bold, Arial Narrow" font-size="20" font-weight="bold">
+                    <text id="UNSTABLE?">
+                        <tspan x="-4" y="15">UNSTABLE?</tspan>
+                        <tspan x="75.9375" y="15"></tspan>
                     </text>
                 </g>
                 <path d="M7.5,10.5 L89.5,10.5" id="Line-2" stroke="#FF0000" stroke-linecap="square"></path>

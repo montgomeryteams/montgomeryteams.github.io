@@ -34,8 +34,8 @@
                 </g>
                 <g id="Group-14" transform="translate(99.000000, 73.000000)">
                     <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="100" height="42"></rect>
-                    <text id="WHEN?" font-family="ArialNarrow-Bold, Arial Narrow" font-size="22" font-weight="bold" fill="#4647FF">
-                        <tspan x="16.940918" y="29">WHEN?</tspan>
+                    <text id="HACKING?" font-family="ArialNarrow-Bold, Arial Narrow" font-size="20" font-weight="bold" fill="#4647FF">
+                        <tspan x="9" y="29">HACKING?</tspan>
                     </text>
                     <path d="M7.5,10.5 L89.5,10.5" id="Line-2" stroke="#FF0000" stroke-linecap="square" fill-rule="nonzero"></path>
                     <path d="M7.5,32.25 L89.5,32.25" id="Line-2" stroke="#FF0000" stroke-linecap="square" fill-rule="nonzero"></path>
